@@ -1,0 +1,65 @@
+.header {
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 32px 0;
+        .logo {
+            margin-right: 36px;
+            &__img {
+            }
+        }
+    
+        .menu {
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 55px;
+                &-item {
+                    padding: 12px 27px;
+                    background-color: transparent;
+                    border-radius: 100px;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: var(--yellow-color);
+                        font-weight: 600;
+                    }
+                    .menu__list-link {
+                        .arr_img {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .header__buttons {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .header-btn {
+                background-color: var(--light-grey-color);
+                &.fav {
+                    padding: 14px;
+                    border-radius: 50%;
+                }
+                
+                &.login {
+                    border-radius: 100px;
+                    padding: 12px 32px;
+                }
+            }
+        }
+    
+    
+    }
+}
+
+
+
+
+
+
+
+
+
