@@ -3,6 +3,9 @@
     padding: 17px 23px 22px 28px;
     border-radius: 15px;
     background-color: #fff;
+    position: absolute;
+    top: -12px;
+    right: 30%;
     &__text {
         margin-bottom: 16px;
     }
@@ -14,6 +17,8 @@
         .contacts__btn {
             border-radius: 100px;
             padding: 14px 25px;
+            color: #fff;
+            font-size: 14px;
             &.whatsapp {
                 background-color: #4CAF50;;
             }
@@ -21,6 +26,11 @@
             &.tg {
                 background-color: #039BE5;;
             }
+            
+        }
+        
+        .contacts__link-img {
+            display: inline-block;
         }
         
         .contacts__link {

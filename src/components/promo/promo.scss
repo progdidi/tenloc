@@ -1,0 +1,15 @@
+
+
+.promo {
+    &__inner {
+        border-radius: 20px;
+        position: relative;
+        background-image: url('./images/promo.png');
+        min-height: calc(100vh - 110px);
+        padding-top: 123px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
