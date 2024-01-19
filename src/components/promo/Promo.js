@@ -16,7 +16,7 @@ const Promo = () => {
                     <form action="" className="promo__form">
                         <input type="text" className="promo__form-input location" />
                         <input type="text" className="promo__form-input calendar" />
-                        <button className="promo__form-btn">Найти</button>
+                        <button className="promo__form-btn main-btn">Найти</button>
                     </form>
 
                     <div className="promo__prompts">Часто ищут:
