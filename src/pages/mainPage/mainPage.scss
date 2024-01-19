@@ -15,3 +15,32 @@
         grid-gap: 30px;
     }
 }
+
+.excursions {
+    padding-bottom: 54px;
+    margin-bottom: 50px;
+    &__title {
+
+    }
+
+    &__input {
+
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 36px;
+        grid-row-gap: 30px;
+        margin-bottom: 73px;
+    }
+
+    &__btn {
+        padding: 18px;
+        text-align: center;
+        width: 195px;
+        margin: 0 auto;
+        font-weight: 500;
+        color: #000;
+    }
+}

@@ -1,0 +1,30 @@
+.excursion__item {
+    max-width: 340px;
+    position: relative;
+    &-fav {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    &-img {
+        margin-bottom: 21px;
+    }
+    &-about {
+        .excursion__item-title {
+        }
+        .excursion__item-descr {
+        }
+    }
+    
+    &-details {
+        .excursion__item-price {
+        }
+        .excursion__item-date {
+        }
+        .excursion__item-btn {
+        }
+    }
+}
+
+

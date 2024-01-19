@@ -1,7 +1,11 @@
-import DirectionItem from "../../components/directionItem/DirectionItem";
+//components
 import Promo from "../../components/promo/Promo";
+
+import DirectionItem from "../../components/directionItem/DirectionItem";
 import {directions} from "../../helpers/directions/directions";
 
+import ExcursionItem from "../../components/excursionItem/ExcursionItem";
+import {excursions} from "../../helpers/excursions/excursions";
 //styles
 import './mainPage.scss';
 
@@ -26,6 +30,30 @@ const MainPage = () => {
                         )                            
                     })}
                 </div>
+            </div>
+        </section>
+
+        <section className="excursions">
+            <div className="container">
+                <h3 className="excursions__title section__title">Экскурсии</h3>
+                <input type="text" className="excursions__input" />
+                <input type="text" className="excursions__input" />
+
+                <div className="excursions__items">
+                    {excursions.map((excursion) => {
+                        return (
+                            <ExcursionItem
+                                key={excursion.id}
+                                img={excursion.img}
+                                price={excursion.price}
+                                title={excursion.title}
+                                descr={excursion.descr}
+                            />
+                        )
+                    })}
+                </div>
+
+                <div className="excursions__btn main-btn">Все экскурсии</div>
             </div>
         </section>
         </>
