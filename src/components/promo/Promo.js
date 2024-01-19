@@ -14,9 +14,8 @@ const Promo = () => {
                     <p className="promo__text">Экскурсии и частные гиды в России и за рубежом</p>
 
                     <form action="" className="promo__form">
-                        <input type="text" className="promo__form-input" />
-                        <input type="text" className="promo__form-input" />
-                        <input type="text" className="promo__form-input" />
+                        <input type="text" className="promo__form-input location" />
+                        <input type="text" className="promo__form-input calendar" />
                         <button className="promo__form-btn">Найти</button>
                     </form>
 

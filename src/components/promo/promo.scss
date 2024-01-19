@@ -1,6 +1,7 @@
 
 
 .promo {
+    margin-bottom: 95px;
     &__inner {
         border-radius: 20px;
         position: relative;
@@ -11,5 +12,91 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 62px;
+        .promo__title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 52px; 
+            position: relative;
+            padding-bottom: 41px;
+            max-width: 50%;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('./images/title.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 41px;
+                width: 50%;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .promo__text {
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+        .promo__form {
+            width: 54%;
+            background-color: #fff;
+            padding: 10px 10px 10px 23px;
+            border-radius: 100px;
+            box-shadow: 0px 42px 80px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 130px;
+            display: flex;
+            &-input {
+                padding: 8px 0;
+                position: relative;
+                width: 38%;
+            }
+            &-btn {
+                width: 134px;
+                background-color: var(--yellow-color);
+                padding: 20px 30px 20px 54px;
+                border-radius: 100px;
+                font-weight: 500;
+                position: relative;
+                display: block;
+                margin-left: auto;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-image: url('./images/find.svg');
+                    background-repeat: no-repeat;
+                    left: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        
+        .promo__prompts {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .promo__prompt {
+                padding: 6px 14px;
+                border-radius: 30px;
+                background-color: rgba(37, 37, 37, 0.15);
+                color: #fff;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: var(--yellow-color);
+                    color: var(--black-color);
+                }
+                &:first-child {
+                    margin-left: 4px;
+                }
+            }
+        }
     }
 }
+
+
