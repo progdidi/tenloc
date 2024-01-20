@@ -1,6 +1,8 @@
 .excursion__item {
     max-width: 340px;
     position: relative;
+    border-radius: 20px;
+    border: 1px solid #DFDFDF;
     &-fav {
         display: block;
         position: absolute;
@@ -8,21 +10,53 @@
         right: 50px;
     }
     &-img {
-        margin-bottom: 21px;
     }
     &-about {
+        padding: 21px 14px 16px 26px;
         .excursion__item-title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 23px;
+            margin-bottom: 10px;
         }
         .excursion__item-descr {
+            color: #6A6A6A;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            
         }
     }
     
     &-details {
+        padding: 14px 23px 19px 26px;
+        border-top: 1px solid #E6E6E6;
+        position: relative;
         .excursion__item-price {
+            font-size: 12px;
+            line-height: 26px;
+            margin-bottom: 8px;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 26px; 
+            }
         }
         .excursion__item-date {
+            border-radius: 1000px;
+            border: 1px solid #E9E9E9;
         }
         .excursion__item-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: #E9E9E9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 23px;
+            bottom: 23px;
         }
     }
 }

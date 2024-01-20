@@ -53,7 +53,7 @@ const MainPage = () => {
                     })}
                 </div>
 
-                <div className="excursions__btn main-btn">Все экскурсии</div>
+                <button className="excursions__btn main-btn">Все экскурсии</button>
             </div>
         </section>
         </>

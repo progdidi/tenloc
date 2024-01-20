@@ -15,7 +15,7 @@ const ExcursionItem = ({img, title, descr, price}) => {
             </div>
 
             <div className="excursion__item-details">
-                <p className="excursion__item-price">{price}</p>
+                <p className="excursion__item-price"> <span>от {price} ₽</span> / с чел</p>
                 <input type="text" className="excursion__item-date" />
                 <button className="excursion__item-btn">
                     <img src={plus} alt="" className="excursion__item-plus" />
