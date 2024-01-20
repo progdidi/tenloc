@@ -13,8 +13,7 @@ import {excursions} from "../../helpers/excursions/excursions";
 import ReviewsItem from "../../components/reviewsItem/ReviewsItem";
 import { reviews } from '../../helpers/reviews/reviews';
 
-import BlogItem from '../../components/blogItem/BlogItem';
-import { blogs } from '../../helpers/blogs/blogs';
+import BlogSection from '../../components/blogSection/BlogSection';
 
 const MainPage = () => {
     return ( 
@@ -89,23 +88,7 @@ const MainPage = () => {
                 </div>
             </section>
 
-            <section className="blog">
-                <div className="container">
-                    <h3 className="section__title blog__title">Блог</h3>
-                    <div className="blog__items">
-                        {blogs.map((blog) => {
-                            return (
-                                <BlogItem
-                                    title={blog.title}
-                                    img={blog.img}
-                                    date={blog.date}
-                                    key={blog.id}
-                                />
-                            )
-                        })}
-                    </div>
-                </div>
-            </section>
+            <BlogSection/>
 
 
         </>

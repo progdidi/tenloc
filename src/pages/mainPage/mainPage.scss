@@ -81,16 +81,3 @@
     }
 }
 
-.blog {
-    padding-top: 95px;
-    padding-bottom: 107px;
-    background-color: var(--light-grey-color);
-    &__title {
-        margin-bottom: 62px;
-    }
-
-    &__items {
-        display: flex;
-        gap: 47px;
-    }
-}
