@@ -14,6 +14,8 @@ import BlogSection from '../../components/blogSection/BlogSection';
 
 import ReviewSection from '../../components/reviewSection/ReviewSection';
 
+import NewsletterSection from '../../components/newsletterSection/NewsletterSection';
+
 const MainPage = () => {
     return ( 
         <>
@@ -65,6 +67,8 @@ const MainPage = () => {
             <ReviewSection></ReviewSection>
 
             <BlogSection></BlogSection>
+
+            <NewsletterSection></NewsletterSection>
 
 
         </>
