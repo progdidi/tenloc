@@ -1,3 +1,6 @@
+//styles
+import './mainPage.scss';
+
 //components
 import Promo from "../../components/promo/Promo";
 
@@ -6,8 +9,9 @@ import {directions} from "../../helpers/directions/directions";
 
 import ExcursionItem from "../../components/excursionItem/ExcursionItem";
 import {excursions} from "../../helpers/excursions/excursions";
-//styles
-import './mainPage.scss';
+
+import ReviewsItem from "../../components/reviewsItem/ReviewsItem";
+import { reviews } from '../../helpers/reviews/reviews';
 
 const MainPage = () => {
     return ( 
@@ -54,6 +58,31 @@ const MainPage = () => {
                 </div>
 
                 <button className="excursions__btn main-btn">Все экскурсии</button>
+            </div>
+        </section>
+
+        <section className="reviews">
+            <div className="container">
+                <div className="reviews__inner">
+                    <div className="reviews__info">
+                        <h3 className="section__title reviews__title">Отзывы</h3>
+                        <p className="reviews__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <button className="reviews__btn main-btn">Оставить отзыв</button>
+                    </div>
+                    {reviews.map((review) => {
+                        return (
+                            <ReviewsItem
+                                name={review.name}
+                                tour={review.tour}
+                                text={review.text}
+                                rate={review.rate}
+                                key={review.id}
+                                img={review.img}
+                            />
+                        )
+                    })}
+                </div>
+                
             </div>
         </section>
         </>

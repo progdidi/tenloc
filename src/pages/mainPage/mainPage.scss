@@ -20,11 +20,16 @@
     padding-bottom: 54px;
     margin-bottom: 50px;
     &__title {
-
+        display: inline-block;
+        margin-bottom: 77px;
+        margin-right: 54px;
     }
 
     &__input {
-
+        margin-right: 29px;
+        border-radius: 10px;
+        border: 1px solid #E6E6E6;
+        padding: 14px 23px;
     }
 
     &__items {
@@ -43,5 +48,35 @@
         margin: 0 auto;
         font-weight: 500;
         color: #000;
+    }
+}
+
+.reviews {
+    padding: 70px 100px 75px 100px;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 27px 31px 0px rgba(0, 0, 0, 0.02);
+    margin-bottom: 114px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        .reviews__info {
+            .reviews__title {
+                margin-bottom: 21px;
+            }
+
+            .reviews__descr {
+                max-width: 320px;
+                margin-bottom: 69px;
+            }
+
+            .reviews__btn {
+                padding: 19px 26px;
+                color: #000;
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
     }
 }

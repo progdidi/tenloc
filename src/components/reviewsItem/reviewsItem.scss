@@ -1,0 +1,31 @@
+.reviews__item {
+    display: flex;
+    gap: 41px;
+    align-items: flex-start;
+    &-img {
+    }
+    &-info {
+        max-width: 570px;
+    }
+    &-name {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #EBEBEB;
+        margin-bottom: 8px;
+    }
+    &-about {
+        padding-bottom: 11px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #EBEBEB;
+        display: flex;
+        gap: 50px;
+        .reviews__item-tour {
+        }
+        .reviews__item-rate {
+        }
+    }
+    
+    &-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
