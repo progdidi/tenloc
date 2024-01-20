@@ -51,33 +51,5 @@
     }
 }
 
-.reviews {
-    padding: 70px 100px 75px 100px;
-    border-radius: 20px;
-    background-color: #FFF;
-    box-shadow: 0px 27px 31px 0px rgba(0, 0, 0, 0.02);
-    margin-bottom: 114px;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        .reviews__info {
-            .reviews__title {
-                margin-bottom: 21px;
-            }
 
-            .reviews__descr {
-                max-width: 320px;
-                margin-bottom: 69px;
-            }
-
-            .reviews__btn {
-                padding: 19px 26px;
-                color: #000;
-                font-size: 15px;
-                font-weight: 500;
-                text-align: center;
-            }
-        }
-    }
-}
 
