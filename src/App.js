@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import CityPage from "./pages/cityPage/CityPage";
 import ExcursionPage from "./pages/excursionPage/ExcursionPage";
 import MainPage from "./pages/mainPage/MainPage";
+import ThanksPage from "./pages/thanksPage/ThanksPage";
 
 
 
@@ -12,7 +13,8 @@ function App() {
       <Header></Header>
       {/* <MainPage></MainPage> */}
       {/* <CityPage></CityPage> */}
-      <ExcursionPage></ExcursionPage>
+      {/* <ExcursionPage></ExcursionPage> */}
+      <ThanksPage></ThanksPage>
       <Footer></Footer>
     </div>
   );
