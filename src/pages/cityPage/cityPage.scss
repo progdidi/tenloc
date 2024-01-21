@@ -1,0 +1,40 @@
+.city {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 76px;
+    &__title {
+        margin-bottom: 20px;
+
+    }
+
+    &__text {
+        margin-bottom: 59px;
+
+    }
+
+    .date__input {
+        margin-bottom: 68px;
+
+    }
+
+    &__excursions {
+        &-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 35px;
+            grid-row-gap: 30px;
+            margin-bottom: 90px;
+        }
+
+        &-btn {
+            display: block;
+            width: 200px;
+            border-radius: 100px;
+            border: 1px dashed #BABABA;
+            margin: 0 auto;
+            padding: 18px 33px;
+            text-align: center;
+            
+        }
+    }
+}

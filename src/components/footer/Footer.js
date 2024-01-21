@@ -53,9 +53,9 @@ const Footer = () => {
                     <div className="footer__contacts">
                         <h6 className="footer__list-title">Поддержка клиентов</h6>
                         <ul className="footer__contacts-list">
-                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link"><span>Телефон:</span> +7 (495) 123-45-67</a></li>
-                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link"><span>E-mail:</span>hello@trevelme.ru</a></li>
-                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link"><span>Офис:</span>Москва, ул. Название улицы 10, офис 11</a></li>
+                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link phone"><span>Телефон:</span> +7 (495) 123-45-67</a></li>
+                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link mail"><span>E-mail:</span> hello@trevelme.ru</a></li>
+                            <li className="footer__contacts-item"><a href="" className="footer__contacts-link location"><span>Офис:</span> Москва, ул. Название улицы 10, офис 11</a></li>
                         </ul>
 
                         <div className="social__items">
@@ -78,7 +78,7 @@ const Footer = () => {
 
                 <div className="footer__bottom">
                     <p className="footer__bottom-text">© 2023 «Tenloc».</p>
-                    <img src={payment} alt="" className="footer__bottom-img" />
+                    <img src={payment} alt="" className="footer__bottom-img payment" />
                     <div className="footer__bottom-dev">
                         <p className="footer__bottom-text">Разработка сайта</p>
                         <img src={dev} alt="" className="footer__bottom-img" />
