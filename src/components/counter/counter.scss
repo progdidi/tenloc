@@ -1,0 +1,24 @@
+.counter {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    &__btn {
+        border-radius: 1000px;
+        background: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37px;
+        height: 37px;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 12px;
+    }
+
+    &__num {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}

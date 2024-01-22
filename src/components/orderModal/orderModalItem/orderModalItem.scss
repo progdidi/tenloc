@@ -1,0 +1,40 @@
+.order-modal__item {
+    border-top: 1px solid #EDEDED;
+    padding: 25px 0;
+    &-data {
+        .order-modal__item-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 15px;
+        }
+        &.name {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        &.date {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        &.price {
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+        }
+    }
+
+    &-title {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; 
+    }
+
+    &:last-child {
+        border-bottom: 1px solid #EDEDED;
+    }
+}
