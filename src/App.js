@@ -1,6 +1,8 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import LoginModal from "./components/loginModal/LoginModal";
 import OrderModal from "./components/orderModal/OrderModal";
+import RegistrationModal from "./components/registrationModal/RegistrationModal";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import BlogArticlePage from "./pages/blogArticlePage/BlogArticlePage";
 import BlogPage from "./pages/blogPage/BlogPage";
@@ -26,7 +28,9 @@ function App() {
       {/* <BlogPage></BlogPage> */}
       {/* <BlogArticlePage></BlogArticlePage> */}
       {/* <GuidePage></GuidePage> */}
-      <OrderModal></OrderModal>
+      {/* <OrderModal></OrderModal> */}
+      <RegistrationModal></RegistrationModal>
+      <LoginModal></LoginModal>
       <Footer></Footer>
     </div>
   );

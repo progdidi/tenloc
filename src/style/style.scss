@@ -47,3 +47,22 @@ body {
     background-color: var(--yellow-color);
 }
 
+.modal__form {
+    &-input {
+        padding: 19px 27px;
+        border-radius: 10px;
+        background-color: #F1F1F1;
+        margin-bottom: 15px;
+        &::placeholder {
+            color: #424242;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
