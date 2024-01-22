@@ -1,3 +1,5 @@
+import './loginModal.scss';
+
 const LoginModal = () => {
     return ( 
         <div className="modal">
@@ -17,7 +19,7 @@ const LoginModal = () => {
                         </div>                        
                         <button className="modal__form-btn main-btn">Войти</button>
                         <p className="modal__form-text">Еще нет аккаунта?</p>
-                        <button className="modal__form-btn">Войти</button>
+                        <button className="modal__form-btn">Зарегестрироваться</button>
                     </div>
                 </div>
                 
