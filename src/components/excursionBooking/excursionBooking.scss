@@ -1,0 +1,40 @@
+.booking {
+    width: 390px;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #DFDFDF;
+    background-color: #FFF;
+    &__title {
+        color: #000;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    &__inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 14px;
+        grid-row-gap: 19px;
+        .booking__input {
+            width: 100%;
+            &:last-child {
+                grid-column: 1/3;
+                margin-bottom: 32px;
+            }
+
+        }
+    }
+    &__details {
+    }
+    &__summary {
+        .booking__summary-title {
+        }
+        .booking__summary-sum {
+        }
+    }
+    
+    &__btn {
+    }
+}
