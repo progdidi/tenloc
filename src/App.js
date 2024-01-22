@@ -1,6 +1,7 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import AboutPage from "./pages/aboutPage/AboutPage";
+import BlogPage from "./pages/blogPage/BlogPage";
 import CityPage from "./pages/cityPage/CityPage";
 import ExcursionPage from "./pages/excursionPage/ExcursionPage";
 import MainPage from "./pages/mainPage/MainPage";
@@ -18,7 +19,8 @@ function App() {
       {/* <ExcursionPage></ExcursionPage> */}
       {/* <ThanksPage></ThanksPage> */}
       {/* <AboutPage></AboutPage> */}
-      <ProfilePage></ProfilePage>
+      {/* <ProfilePage></ProfilePage> */}
+      <BlogPage></BlogPage>
       <Footer></Footer>
     </div>
   );
