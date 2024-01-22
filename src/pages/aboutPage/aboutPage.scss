@@ -1,0 +1,100 @@
+.about {
+    padding-top: 67px;
+    padding-bottom: 120px;
+    border-radius: 0px 0px 50px 50px;
+    &__title {
+        margin-bottom: 34px;
+    }
+    &__text {
+        max-width: 68%;
+        margin-bottom: 60px;
+        color: var(--dark-grey-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+
+.fast {
+    background-image: url('./images/fast.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 104px;
+    padding-bottom: 175px;
+    margin-bottom: 100px;
+    .fast__title {
+        margin-bottom: 35px;
+    }
+    .fast__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; 
+        max-width: 51%;
+        margin-bottom: 20px;
+    }
+}
+
+.advantages {
+    padding-bottom: 120px;
+    border-radius: 0px 0px 50px 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        .advantages__item {
+            max-width: 334px;
+            &-main {
+                display: flex;
+                gap: 21px;
+                padding-bottom: 22px;
+                border-bottom: 1px solid #E8E8E8;
+                .advantages__item-img {
+                    width: 62px;
+                    height: 62px;
+                    background-color: var(--yellow-color);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                }
+                .advantages__item-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 52px;
+                }
+            }
+            
+            &-text {
+                color: var(--dark-grey-color);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px; 
+            }
+        }
+
+    }
+}
+
+
+.steps {
+}
+.steps__title {
+}
+.steps__inner {
+}
+.steps__img {
+}
+.steps__info {
+}
+.steps__item {
+}
+.steps__item-num {
+}
+.steps__item-info {
+}
+.steps__item-title {
+}
+.steps__item-text {
+}

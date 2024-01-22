@@ -1,5 +1,6 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import AboutPage from "./pages/aboutPage/AboutPage";
 import CityPage from "./pages/cityPage/CityPage";
 import ExcursionPage from "./pages/excursionPage/ExcursionPage";
 import MainPage from "./pages/mainPage/MainPage";
@@ -14,7 +15,8 @@ function App() {
       {/* <MainPage></MainPage> */}
       {/* <CityPage></CityPage> */}
       {/* <ExcursionPage></ExcursionPage> */}
-      <ThanksPage></ThanksPage>
+      {/* <ThanksPage></ThanksPage> */}
+      <AboutPage></AboutPage>
       <Footer></Footer>
     </div>
   );
