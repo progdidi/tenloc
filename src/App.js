@@ -1,5 +1,6 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import OrderModal from "./components/orderModal/OrderModal";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import BlogArticlePage from "./pages/blogArticlePage/BlogArticlePage";
 import BlogPage from "./pages/blogPage/BlogPage";
@@ -24,7 +25,8 @@ function App() {
       {/* <ProfilePage></ProfilePage> */}
       {/* <BlogPage></BlogPage> */}
       {/* <BlogArticlePage></BlogArticlePage> */}
-      <GuidePage></GuidePage>
+      {/* <GuidePage></GuidePage> */}
+      <OrderModal></OrderModal>
       <Footer></Footer>
     </div>
   );
