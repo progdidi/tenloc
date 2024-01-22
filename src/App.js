@@ -5,6 +5,7 @@ import BlogArticlePage from "./pages/blogArticlePage/BlogArticlePage";
 import BlogPage from "./pages/blogPage/BlogPage";
 import CityPage from "./pages/cityPage/CityPage";
 import ExcursionPage from "./pages/excursionPage/ExcursionPage";
+import GuidePage from "./pages/guidePage/GuidePage";
 import MainPage from "./pages/mainPage/MainPage";
 import ProfilePage from "./pages/profilePage/ProfilePage";
 import ThanksPage from "./pages/thanksPage/ThanksPage";
@@ -22,7 +23,8 @@ function App() {
       {/* <AboutPage></AboutPage> */}
       {/* <ProfilePage></ProfilePage> */}
       {/* <BlogPage></BlogPage> */}
-      <BlogArticlePage></BlogArticlePage>
+      {/* <BlogArticlePage></BlogArticlePage> */}
+      <GuidePage></GuidePage>
       <Footer></Footer>
     </div>
   );
