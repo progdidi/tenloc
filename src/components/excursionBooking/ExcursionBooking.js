@@ -46,7 +46,7 @@ const ExcursionBooking = () => {
             <h4 className="booking__title">Забронировать экскурсию</h4>
 
             <div className="booking__inputs">
-                <input type="text" className="booking__input" />
+                <input type="text" className="booking__input active" />
                 <input type="text" className="booking__input" />
                 <input type="text" className="booking__input" />
             </div>
@@ -71,7 +71,7 @@ const ExcursionBooking = () => {
             </div>
 
             <button className="booking__btn">Задать вопрос по экскурсии</button>
-            <button className="booking__btn">Добавить в заказ</button>
+            <button className="booking__btn active">Добавить в заказ</button>
         </div>
      );
 }
