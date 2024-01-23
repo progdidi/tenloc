@@ -19,6 +19,7 @@ import gal6 from './images/gal6.png';
 
 import ExcursionBooking from '../../components/excursionBooking/ExcursionBooking';
 import ExcursionSection from '../../components/excursionSection/ExcursionSection';
+import Basket from '../../components/basket/Basket';
 
 const ExcursionPage = () => {
     return ( 
@@ -109,6 +110,8 @@ const ExcursionPage = () => {
                         </div>
 
                         <ExcursionBooking/>
+
+                        <Basket></Basket>
                     </div>
 
                 </div>

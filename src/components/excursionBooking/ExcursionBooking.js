@@ -2,6 +2,7 @@ import './excursionBooking.scss';
 
 import DetailItem from './detailsItem/DetailItem';
 import Calendar from '../calendar/Calendar';
+import { useState } from 'react';
 
 const details = [
     {
@@ -43,10 +44,7 @@ const details = [
 
 const ExcursionBooking = () => {
 
-    function chooseDate() {
-        
-        
-    }
+    const [isCalendarOpen, setCalendarOpen] = useState();
 
     return ( 
         <div className="booking">
@@ -55,11 +53,11 @@ const ExcursionBooking = () => {
 
                 <div className="booking__inputs">
                     <input type="text" className="booking__input active" />
-                    <input type="text" className="booking__input date" onClick={() => chooseDate()}/>
+                    <input type="text" className="booking__input date" onClick={() => setCalendarOpen(true)}/>
                     <input type="text" className="booking__input"/>
                 </div>
 
-                <Calendar></Calendar>
+                <Calendar showCalendar={isCalendarOpen}></Calendar>
 
 
                 <div className="booking__details">
