@@ -1,3 +1,10 @@
+.modal {
+    display: block;
+    &.active {
+        display: none;
+    }
+}
+
 .login-modal {
     max-width: 480px;
 }

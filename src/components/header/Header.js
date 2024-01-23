@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
+import LoginModal from '../loginModal/LoginModal';
+
 
 //images
 import fav from './images/fav.svg';
@@ -12,6 +14,7 @@ import './header.scss';
 const Header = () => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const [isLoginOpen, setLoginOpen] = useState(false);
 
 
 
@@ -63,10 +66,12 @@ const Header = () => {
                         <button className="header-btn fav">
                             <img src={fav} alt="" className="header-btn__img" />
                         </button>
-                        <button className="header-btn login">Войти</button>
+                        <button className="header-btn login" onClick={() => {setLoginOpen(!isLoginOpen)}}>Войти</button>
                     </div>
                 </div>
             </div>
+
+            <LoginModal showLogin={isLoginOpen}/>
         </header>
      );
 }

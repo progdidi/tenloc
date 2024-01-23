@@ -49,15 +49,30 @@ body {
 }
 
 .modal {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(37, 37, 37, 0.5);
+    &__overlay {
+    }
     &__content {
+        
         margin: 0 auto;
+        margin-top: 50px;
         position: relative;
+        background-color: #fff;
+        padding: 44px 46px;
+        border-radius: 20px;
     }
 
     &-close__btn {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 18px;
+        top: 18px;
+        font-size: 25px;
     }
 
     &__title {

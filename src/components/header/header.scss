@@ -78,6 +78,9 @@
             gap: 20px;
             .header-btn {
                 background-color: var(--light-grey-color);
+                &:hover {
+                    background-color: var(--yellow-color);
+                }
                 &.fav {
                     padding: 14px;
                     border-radius: 50%;
