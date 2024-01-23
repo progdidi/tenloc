@@ -50,37 +50,55 @@ const ExcursionBooking = () => {
 
     return ( 
         <div className="booking">
-            <h4 className="booking__title">Забронировать экскурсию</h4>
+            <div className="booking__main">
+                <h4 className="booking__title">Забронировать экскурсию</h4>
 
-            <div className="booking__inputs">
-                <input type="text" className="booking__input active" />
-                <input type="text" className="booking__input date" onClick={() => chooseDate()}/>
-                <input type="text" className="booking__input"/>
+                <div className="booking__inputs">
+                    <input type="text" className="booking__input active" />
+                    <input type="text" className="booking__input date" onClick={() => chooseDate()}/>
+                    <input type="text" className="booking__input"/>
+                </div>
+
+                <Calendar></Calendar>
+
+
+                <div className="booking__details">
+                    {details.map((detail) => {
+                        return (
+                            <DetailItem 
+                                key={detail.id}
+                                detail={detail.detail}
+                                price={detail.price}
+                                amount={detail.amount}
+                            />
+                        )
+                    })}
+                </div>
+
+                <div className="booking__summary">
+                    <p className="booking__summary-title">Итого</p>
+                    <p className="booking__summary-sum">5 500 ₽</p>
+                </div>
+
+                <button className="booking__btn">Задать вопрос по экскурсии</button>
+                <button className="booking__btn active">Добавить в заказ</button>
             </div>
 
-            <Calendar></Calendar>
+            <div className="booking__info">
+                <div className="booking__info-item">
+                    <h6 className="booking__info-title">Место встречи:</h6>
+                    <p className="booking__info-text">Дворцовая площадь, Александровская колонна.</p>
+                </div>
+                <div className="booking__info-item">
+                    <h6 className="booking__info-title">Место окончания:</h6>
+                    <p className="booking__info-text">Дворцовая набережная, 34</p>
+                </div>
+                <div className="booking__info-item">
+                    <h6 className="booking__info-title">Длительность:</h6>
+                    <p className="booking__info-text">2 часа</p>
+                </div>
+            </div>
             
-
-            <div className="booking__details">
-                {details.map((detail) => {
-                    return (
-                        <DetailItem 
-                            key={detail.id}
-                            detail={detail.detail}
-                            price={detail.price}
-                            amount={detail.amount}
-                        />
-                    )
-                })}
-            </div>
-
-            <div className="booking__summary">
-                <p className="booking__summary-title">Итого</p>
-                <p className="booking__summary-sum">5 500 ₽</p>
-            </div>
-
-            <button className="booking__btn">Задать вопрос по экскурсии</button>
-            <button className="booking__btn active">Добавить в заказ</button>
         </div>
      );
 }
