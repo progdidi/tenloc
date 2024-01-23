@@ -1,6 +1,7 @@
 import './excursionBooking.scss';
 
 import DetailItem from './detailsItem/DetailItem';
+import Calendar from '../calendar/Calendar';
 
 const details = [
     {
@@ -41,15 +42,23 @@ const details = [
 ]
 
 const ExcursionBooking = () => {
+
+    function chooseDate() {
+        
+        
+    }
+
     return ( 
         <div className="booking">
             <h4 className="booking__title">Забронировать экскурсию</h4>
 
             <div className="booking__inputs">
                 <input type="text" className="booking__input active" />
-                <input type="text" className="booking__input" />
-                <input type="text" className="booking__input" />
+                <input type="text" className="booking__input date" onClick={() => chooseDate()}/>
+                <input type="text" className="booking__input"/>
             </div>
+
+            <Calendar></Calendar>
             
 
             <div className="booking__details">

@@ -1,0 +1,106 @@
+.calendar {
+    width: 860px;
+    padding: 42px 35px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    &__inner {
+        display: flex;
+        gap: 47px;
+        margin-bottom: 36px;
+    }
+    &__month {
+        width: 372px;
+        margin-bottom: 16px;
+        position: relative;
+        &-btn {
+            position: absolute;
+            top: 0;
+            &.prev {
+                left: 0;
+            }
+
+            &.next {
+                right: 0;
+            }
+        }
+        &-title {
+            text-align: center;
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .calendar-table {
+            &__weak {
+                margin-bottom: 3px;
+                &-day {
+                    width: 48px;
+                    height: 48px;
+                    text-align: center;
+                    color: #858585;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            &__days {
+                .calendar-table__day {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    text-align: center;
+                    &:hover {
+                        border-radius: 100px;
+                        background: var(--yellow-color);
+                    }
+                    &.free {
+                        background-color: var(--yellow-color);
+                    }
+
+                    &.reserved {
+                        background-color: var(--pink-color);
+                    }
+                }
+            }
+        }
+    }
+
+   &__details {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            .calendar__details-color {
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                &.reserved {
+                    background-color: var(--pink-color);
+                }
+
+                &.free {
+                    background-color: #F8F8F8;
+                }
+            }
+
+            .calendar__details-text {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+            }
+        }
+   }
+}

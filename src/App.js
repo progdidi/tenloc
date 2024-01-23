@@ -12,8 +12,6 @@ import GuidePage from "./pages/guidePage/GuidePage";
 import MainPage from "./pages/mainPage/MainPage";
 import ProfilePage from "./pages/profilePage/ProfilePage";
 import ThanksPage from "./pages/thanksPage/ThanksPage";
-import ExcursionBooking from "./components/excursionBooking/ExcursionBooking";
-
 
 
 function App() {
@@ -22,7 +20,7 @@ function App() {
       <Header></Header>
       {/* <MainPage></MainPage> */}
       {/* <CityPage></CityPage> */}
-      {/* <ExcursionPage></ExcursionPage> */}
+      <ExcursionPage></ExcursionPage>
       {/* <ThanksPage></ThanksPage> */}
       {/* <AboutPage></AboutPage> */}
       {/* <ProfilePage></ProfilePage> */}
@@ -32,7 +30,6 @@ function App() {
       {/* <OrderModal></OrderModal> */}
       {/* <RegistrationModal></RegistrationModal>
       <LoginModal></LoginModal> */}
-      <ExcursionBooking></ExcursionBooking>
       <Footer></Footer>
     </div>
   );
