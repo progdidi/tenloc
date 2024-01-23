@@ -18,13 +18,18 @@ import gal5 from './images/gal5.png';
 import gal6 from './images/gal6.png';
 
 import ExcursionBooking from '../../components/excursionBooking/ExcursionBooking';
+import ExcursionSection from '../../components/excursionSection/ExcursionSection';
 
 const ExcursionPage = () => {
     return ( 
         <>
-            <div className="excursion">
+            <section className="excursion">
                 <div className="container">
-                    <h3 className="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца (со входными билетами)</h3>
+                    <div className="excursion__top">
+                        <h3 className="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца (со входными билетами)</h3>
+                        <p className="excursion__price">от 2750 ₽ <br /> <span>за человека</span> </p>
+                    </div>
+                    
 
                     <div className="excursion__slider">
                         <img src={ex1} alt="" className="excursion__slider-img" />
@@ -107,7 +112,9 @@ const ExcursionPage = () => {
                     </div>
 
                 </div>
-            </div>
+            </section>
+
+            <ExcursionSection/>
         </>
      );
 }

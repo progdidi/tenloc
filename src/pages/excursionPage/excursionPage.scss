@@ -1,32 +1,61 @@
 .excursion {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .excursion__price {
+            color: #252525;
+            text-align: right;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            span {
+                color: #828282;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
     &__title {
         font-size: 30px;
         font-weight: 700;
         line-height: 40px;
         margin-bottom: 50px;
+        max-width: 65%;
     }
     &__slider {
         display: flex;
         margin-bottom: 67px;
+        overflow: hidden;
         .excursion__slider-img {
         }
     }
 
     &__info {
         display: flex;
+        gap: 100px;
     }
     
     &__descr {
+        margin-bottom: 45px;
     }
     &__details {
         display: flex;
+        gap: 60px;
         padding: 31px 0;
         border-bottom: 1px solid #E4E4E4;
         border-top: 1px solid #E4E4E4;
         margin-bottom: 43px;
         .excursion__details-item {
-        }
-        .excursion__details-img {
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            font-size: 15px;
+            line-height: 26px;
         }
     }
     &__about {
@@ -39,7 +68,21 @@
                 margin-bottom: 14px;
             }
             .excursion__about-list {
+                
                 &-item {
+                    padding-left: 20px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        background-color: var(--black-color);
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 5px;
+                    }
                 }
             }
             &:last-child {

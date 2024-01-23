@@ -1,39 +1,4 @@
 
 
-.excursions {
-    padding-bottom: 54px;
-    margin-bottom: 50px;
-    &__title {
-        display: inline-block;
-        margin-bottom: 77px;
-        margin-right: 54px;
-    }
-
-    &__input {
-        margin-right: 29px;
-        border-radius: 10px;
-        border: 1px solid #E6E6E6;
-        padding: 14px 23px;
-    }
-
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 36px;
-        grid-row-gap: 30px;
-        margin-bottom: 73px;
-    }
-
-    &__btn {
-        display: block;
-        padding: 18px;
-        text-align: center;
-        width: 195px;
-        margin: 0 auto;
-        font-weight: 500;
-        color: #000;
-    }
-}
-
 
 
