@@ -1,8 +1,7 @@
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import LoginModal from "./components/loginModal/LoginModal";
-import OrderModal from "./components/orderModal/OrderModal";
-import RegistrationModal from "./components/registrationModal/RegistrationModal";
 import AboutPage from "./pages/aboutPage/AboutPage";
 import BlogArticlePage from "./pages/blogArticlePage/BlogArticlePage";
 import BlogPage from "./pages/blogPage/BlogPage";
@@ -16,22 +15,29 @@ import ThanksPage from "./pages/thanksPage/ThanksPage";
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      {/* <MainPage></MainPage> */}
-      {/* <CityPage></CityPage> */}
-      <ExcursionPage></ExcursionPage>
-      {/* <ThanksPage></ThanksPage> */}
-      {/* <AboutPage></AboutPage> */}
-      {/* <ProfilePage></ProfilePage> */}
-      {/* <BlogPage></BlogPage> */}
-      {/* <BlogArticlePage></BlogArticlePage> */}
-      {/* <GuidePage></GuidePage> */}
-      {/* <OrderModal></OrderModal> */}
-      {/* <RegistrationModal></RegistrationModal>
-      <LoginModal></LoginModal> */}
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="App">
+        <Header></Header>
+
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<MainPage/>} />
+            <Route path="/city" element={<CityPage/>} />
+            <Route path="/excursion" element={<ExcursionPage/>} />
+            <Route path="/thanks" element={<ThanksPage/>} />
+            <Route path="/about" element={<AboutPage/>} />
+            <Route path="/profile" element={<ProfilePage/>} />
+            <Route path="/blog" element={<BlogPage/>} />
+            <Route path="/article" element={<BlogArticlePage/>} />
+            <Route path="/guide" element={<GuidePage/>} />
+
+          </Routes>
+        </main>
+        
+        <Footer></Footer>
+      </div>
+    </Router>
+    
   );
 }
 
