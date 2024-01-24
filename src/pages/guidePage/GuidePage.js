@@ -5,30 +5,42 @@ import offer1 from './images/offer1.svg';
 import offer2 from './images/offer2.svg';
 import offer3 from './images/offer3.svg';
 import offer4 from './images/offer4.svg';
+import who from './images/who.png';
 
 const GuidePage = () => {
     return ( 
         <>
         <section className="guide-page__promo">
             <div className="container">
-                <h2 className="guide-page__promo-title page__title">Станьте гидом нашего сервиса</h2>
+                <div className="guide-page__promo-inner">
+                    <h2 className="guide-page__promo-title page__title">Станьте гидом нашего сервиса</h2>
 
-                <p className="guide-page__promo-text">Trevel Me - это сервис необычных экскурсий от местных жителей.
-                Присоединитесь к огромному сообществу гидов, делитесь своими знаниями,
-                встречайтесь с интересными людьми и зарабатывайте,
-                занимаясь любимым делом!</p>
+                    <p className="guide-page__promo-text">Trevel Me - это сервис необычных экскурсий от местных жителей.
+                    Присоединитесь к огромному сообществу гидов, делитесь своими знаниями,
+                    встречайтесь с интересными людьми и зарабатывайте,
+                    занимаясь любимым делом!</p>
 
-                <button className="guide-page__promo-btn main-btn">Стать гидом</button>
+                    <button className="guide-page__promo-btn main-btn">Стать гидом</button>
+                </div>
+                
             </div>
         </section>
 
         <section className="guide-who">
             <div className="container">
-                <h2 className="guide-who__title page__title">Кто может стать гидом</h2>
-                <p className="guide-who__text">Мы работаем и с профессиональными гидами, и с влюбленными в город энтузиастами, которые хотят проводить экскурсии. С Трипстером сотрудничают журналисты, историки, архитекторы, искусствоведы и другие харизматичные рассказчики.
+                <div className="guide-who__inner">
+                    <img src={who} alt="" className="guide-who__img" />
 
-                <span>Чтобы стать гидом Trevel Me, важно знать и любить свой город, а также уметь увлечь своими знаниями. В остальном
-                мы поможем!</span> </p>
+                    <div className="guide-who__info">
+                    <h2 className="guide-who__title page__title">Кто может стать гидом</h2>
+                    <p className="guide-who__text">Мы работаем и с профессиональными гидами, и с влюбленными в город энтузиастами, которые хотят проводить экскурсии. С Трипстером сотрудничают журналисты, историки, архитекторы, искусствоведы и другие харизматичные рассказчики.
+
+                    <span>Чтобы стать гидом Trevel Me, важно знать и любить свой город, а также уметь увлечь своими знаниями. В остальном
+                    мы поможем!</span> </p>
+                </div>
+                </div>
+                
+                
             </div>
         </section>
 
@@ -39,22 +51,31 @@ const GuidePage = () => {
 
                 <div className="excursion-offer__items">
                     <div className="excursion-offer__item">
-                        <img src="" alt="" className="excursion-offer__item-img" />
+                        <div className="excursion-offer__item-icon">
+                            <img src={offer1} alt="" className="excursion-offer__item-img" />
+                        </div>
+                        
                         <h6 className="excursion-offer__item-title">Отправьте заявку</h6>
                         <p className="excursion-offer__item-text">Нам важно, чтобы у экскурсии была понятная концепция, через которую вы делитесь своим взглядом на город.</p>
                     </div>
                     <div className="excursion-offer__item">
-                        <img src="" alt="" className="excursion-offer__item-img" />
+                        <div className="excursion-offer__item-icon">
+                            <img src={offer2} alt="" className="excursion-offer__item-img" />
+                        </div>
                         <h6 className="excursion-offer__item-title">Ждите ответа</h6>
                         <p className="excursion-offer__item-text">Мы свяжемся с вами, сообщим, подходит ли нам экскурсия, и договоримся о звонке.</p>
                     </div>
                     <div className="excursion-offer__item">
-                        <img src="" alt="" className="excursion-offer__item-img" />
+                        <div className="excursion-offer__item-icon">
+                            <img src={offer3} alt="" className="excursion-offer__item-img" />
+                        </div>
                         <h6 className="excursion-offer__item-title">Звонок-знакомство</h6>
                         <p className="excursion-offer__item-text">Созвонимся и обсудим основные идеи, содержание экскурсии и условия сотрудничества.</p>
                     </div>
                     <div className="excursion-offer__item">
-                        <img src="" alt="" className="excursion-offer__item-img" />
+                        <div className="excursion-offer__item-icon">
+                            <img src={offer4} alt="" className="excursion-offer__item-img" />
+                        </div>
                         <h6 className="excursion-offer__item-title">Экскурсия на сайте</h6>
                         <p className="excursion-offer__item-text">Мы составим описание так, чтобы экскурсия хорошо продавалась, и разместим предложение на сайте.</p>
                     </div>

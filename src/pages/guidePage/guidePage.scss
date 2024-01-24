@@ -1,0 +1,184 @@
+.guide-page__promo {
+    margin-bottom: 120px;
+    &-inner {
+        min-height: calc(100vh - 114px);
+        background-image: url('./images/promo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-left: 108px;
+        border-radius: 20px;
+        padding-bottom: 120px;
+    }
+    &-title {
+        padding-top: 108px;
+        max-width: 381px;
+        font-weight: 900;
+        margin-bottom: 14px;
+        padding-bottom: 42px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('./images/title.svg');
+            bottom: 0;
+            left: 0;
+            width: 230px;
+            height: 41px;
+        }
+    }
+    &-text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 54px;
+        max-width: 45%;
+    }
+    &-btn {
+        padding: 15px 32px;
+        font-weight: 500;
+    }
+}
+
+
+.guide-who {
+    background-color: #9BD5EB;
+    margin-bottom: 91px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__info {
+        padding-top: 143px;
+        padding-bottom: 151px;
+        padding-right: 64px;
+        max-width: 50%;
+        .guide-who__title {
+            margin-bottom: 35px;
+        }
+        .guide-who__text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            span {
+                display: block;
+                margin-top: 30px;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+    }
+    
+}
+
+.excursion-offer {
+    padding-bottom: 120px;
+    border-radius: 0px 0px 50px 50px;
+    &__title {
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    &__descr {
+        text-align: center;
+        margin-bottom: 90px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    &__items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .excursion-offer__item {
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-icon {
+                width: 129px;
+                height: 129px;
+                background-color: #FFF8D0;
+                padding: 40px;
+                position: relative;
+                border-radius: 50%;
+                margin-bottom: 22px;
+                &::before {
+                    position: absolute;
+                    content: '1';
+                    width: 31px;
+                    height: 31px;
+                    border-radius: 50%;
+                    background-color: var(--yellow-color);
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &-title {
+                text-align: center;
+                margin-bottom: 12px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &-text {
+                color: #454545;
+                text-align: center;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 23px; 
+            }
+        }
+    }
+    
+    
+}
+
+.conditions {
+    background-color: #F4F4F4;
+    .conditions__inner {
+    }
+    .conditions__title {
+    }
+    .conditions__info {
+    }
+    .conditions__item {
+    }
+    .conditions__item-num {
+    }
+    .conditions__item-title {
+    }
+    .conditions__item-text {
+    }
+    .conditions__summary {
+    }
+    .conditions__summary-main {
+    }
+    .conditions__summary-text {
+    }
+}
+
+.registration {
+    .registration__title {
+    }
+    .registration__form {
+    }
+    .registration__form-input {
+    }
+    .registration__form-text {
+    }
+    .registration__form-btn {
+    }
+    .registration__form-comment {
+    }
+}
