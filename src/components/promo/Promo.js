@@ -14,8 +14,14 @@ const Promo = () => {
                     <p className="promo__text">Экскурсии и частные гиды в России и за рубежом</p>
 
                     <form action="" className="promo__form">
-                        <input type="text" className="promo__form-input location" />
-                        <input type="text" className="promo__form-input calendar" />
+                        <div className="promo__form-field location">
+                            <input type="text" className="promo__form-input" placeholder="Выберите направление"/>
+                        </div>
+
+                        <div className="promo__form-field date">
+                            <input type="text" className="promo__form-input" placeholder="Дата"/>
+                        </div>
+                        
                         <button className="promo__form-btn main-btn">Найти</button>
                     </form>
 

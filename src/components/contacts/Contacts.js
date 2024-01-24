@@ -1,8 +1,6 @@
 //images
 import whatsapp from './images/whatsapp.svg';
 import tg from './images/telegram.png';
-import phone from './images/phone.svg';
-import mail from './images/mail.svg';
 
 //styles
 import './contacts.scss';
@@ -20,12 +18,10 @@ const Contacts = () => {
                     <img src={tg} alt="" className="contacts__link-img" />Telegram
                 </a>
 
-                <a href="tel:+74951234567" className="contacts__link">
-                    <img src={phone} alt="" className="contacts__link-img" /> +7 (495) 123-45-67
+                <a href="tel:+74951234567" className="contacts__link phone"> +7 (495) 123-45-67
                 </a>
                 
-                <a href="mail:hello@trevelme.ru" className="contacts__link">
-                    <img src={mail} alt="" className="contacts__link-img" /> hello@trevelme.ru
+                <a href="mail:hello@trevelme.ru" className="contacts__link mail"> hello@trevelme.ru
                 </a>
             </div>
 
