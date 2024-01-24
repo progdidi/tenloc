@@ -85,8 +85,8 @@ const GuidePage = () => {
 
         <section className="conditions">
             <div className="container">
+                <h2 className="conditions__title page__title">Условия сотрудничества</h2>
                 <div className="conditions__inner">
-                    <h2 className="conditions__title page__title">Условия сотрудничества</h2>
                     <div className="conditions__info">
                         <div className="conditions__item">
                             <p className="conditions__item-num">1</p>
@@ -114,14 +114,16 @@ const GuidePage = () => {
             <div className="container">
                 <h4 className="registration__title">Регистрация гида</h4>
                     <form action="" className="registration__form">
-                        <input type="text" className="registration__form-input" placeholder='Имя'/>
-                        <input type="text" className="registration__form-input" placeholder='Фамилия'/>
-                        <input type="text" className="registration__form-input" placeholder='E-mail'/>
-                        <input type="text" className="registration__form-input" placeholder='Телефон'/>
-                        <input type="text" className="registration__form-input" placeholder='Название Вашей экскурсии'/>
-                        <textarea name="" id="" cols="30" rows="10" className="registration__form-text" placeholder='Описание экскурсии'></textarea>
+                        <div className="registration__form-info">
+                            <input type="text" className="registration__form-input" placeholder='Имя'/>
+                            <input type="text" className="registration__form-input" placeholder='Фамилия'/>
+                            <input type="text" className="registration__form-input" placeholder='E-mail'/>
+                            <input type="text" className="registration__form-input" placeholder='Телефон'/>
+                            <input type="text" className="registration__form-input" placeholder='Название Вашей экскурсии'/>
+                            <textarea name="" id="" cols="30" rows="10" className="registration__form-text" placeholder='Описание экскурсии'></textarea>
+                        </div>
                         <button className="registration__form-btn main-btn">Отправить заявку</button>
-                        <p className="registration__form-comment">Отправляя заявку, вы принимаете условия.</p>
+                        <p className="registration__form-comment">Отправляя заявку, вы принимаете <a href="" className="registration__form-link">условия</a> .</p>
                     </form>
             </div>
         </section>
