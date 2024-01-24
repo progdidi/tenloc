@@ -5,6 +5,7 @@ import BlogItem from '../../components/blogItem/BlogItem';
 import { blogs } from '../../helpers/blogs/blogs';
 
 import NewsletterSection from '../../components/newsletterSection/NewsletterSection';
+import Paddination from '../../components/paddination/Paddination';
 
 const BlogPage = () => {
     return ( 
@@ -36,7 +37,7 @@ const BlogPage = () => {
                         })}
                     </div>
 
-                    <div className="blog-page__pages">12345678</div>
+                    <Paddination></Paddination>
                 </div>
             </section>
 
