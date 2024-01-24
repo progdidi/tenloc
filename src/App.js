@@ -11,7 +11,7 @@ import GuidePage from "./pages/guidePage/GuidePage";
 import MainPage from "./pages/mainPage/MainPage";
 import ProfilePage from "./pages/profilePage/ProfilePage";
 import ThanksPage from "./pages/thanksPage/ThanksPage";
-
+import ErrorPage from "./pages/errorPage/404";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
             <Route path="/blog" element={<BlogPage/>} />
             <Route path="/article" element={<BlogArticlePage/>} />
             <Route path="/guide" element={<GuidePage/>} />
-
+            <Route path="/error" element={<ErrorPage/>} />
           </Routes>
         </main>
         

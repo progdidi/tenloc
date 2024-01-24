@@ -8,6 +8,8 @@ import inst from '../../images/social/inst.svg';
 import vk from '../../images/social/vk.svg';
 import tg from '../../images/social/tg.svg';
 
+import { NavLink } from 'react-router-dom';
+
 import './footer.scss';
 
 const Footer = () => {
@@ -31,14 +33,20 @@ const Footer = () => {
 
                     <ul className="footer__list">
                         <h6 className="footer__list-title">Сервис</h6>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">О сервисе</a></li>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">Блог</a></li>
+                        <li className="footer__list-item">
+                            <NavLink to="/about" className="logo">О сервисе</NavLink>
+                        </li>
+                        <li className="footer__list-item">
+                            <NavLink to="/blog" className="logo">Блог</NavLink>
+                        </li>
                         <li className="footer__list-item"><a href="" className="footer__list-link">Часто задаваемые вопросы</a></li>
                         <li className="footer__list-item"><a href="" className="footer__list-link">Способы оплаты</a></li>
                     </ul>
                     <ul className="footer__list">
                         <h6 className="footer__list-title">Гидам</h6>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">Стать гидом</a></li>
+                        <li className="footer__list-item">
+                            <NavLink to="/guide" className="logo">Стать гидом</NavLink>
+                        </li>
                         <li className="footer__list-item"><a href="" className="footer__list-link">Правила работы</a></li>
                     </ul>
                     <ul className="footer__list">
