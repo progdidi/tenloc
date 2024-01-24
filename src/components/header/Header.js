@@ -15,6 +15,7 @@ const Header = () => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const [isLoginOpen, setLoginOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 
 
@@ -25,7 +26,7 @@ const Header = () => {
                     <NavLink to="/" className="logo"><img src={logo} alt="" className="logo__img" /></NavLink>
 
                     <nav className="menu">
-                        <ul className="menu__list">
+                        <ul className={isMobileMenuOpen ? "menu__list" : "menu__list active"}>
                             <li className="menu__list-item direction" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
                                 <button className="menu__list-link">Направления <img src={arr} alt="" className="arr_img" /></button>
                                 <ul className={isNavExpanded ? "submenu" : "submenu active"}>
@@ -61,6 +62,12 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
+
+                    <button className="menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
                     <div className="header__buttons">
                         <button className="header-btn fav">

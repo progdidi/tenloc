@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <Header></Header>
 
-        <main className="main">
+        {/* <main className="main">
           <Routes>
             <Route path="/" element={<MainPage/>} />
             <Route path="/city" element={<CityPage/>} />
@@ -34,7 +34,7 @@ function App() {
           </Routes>
         </main>
         
-        <Footer></Footer>
+        <Footer></Footer> */}
       </div>
     </Router>
     
