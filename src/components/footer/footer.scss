@@ -203,7 +203,21 @@
         padding-top: 30px;
         .footer__inner {
             padding-bottom: 30px;
-            .footer__about, .footer__list {
+            .footer__about {
+                width: 100%;
+                padding-bottom: 26px;
+                border-bottom: 1px solid #E2E2E2;
+                .footer__logo {
+                    margin-bottom: 0;
+                }
+                &-text {
+                    display: none;
+                }
+                .footer__app {
+                    display: none;
+                }
+            }
+            .footer__list {
                 display: none;
             }
         }

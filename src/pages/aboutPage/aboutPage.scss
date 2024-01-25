@@ -42,10 +42,13 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+        gap: 70px;
         .advantages__item {
-            max-width: 334px;
+            max-width: 415px;
             &-main {
                 display: flex;
+                align-items: center;
                 gap: 21px;
                 padding-bottom: 22px;
                 border-bottom: 1px solid #E8E8E8;
@@ -62,7 +65,7 @@
                 .advantages__item-title {
                     font-size: 22px;
                     font-weight: 600;
-                    line-height: 52px;
+                    line-height: 30px;
                 }
             }
             
@@ -125,6 +128,83 @@
             }
            
             
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .about {
+        &__text {
+            max-width: 80%;
+        }
+    }
+
+    .fast {
+        padding: 104px 30px;
+    }
+
+    .advantages {
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .steps {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        &__text {
+            max-width: 90%;
+        }
+    }
+
+    .fast {
+        .fast__text {
+            max-width: 70%;
+        }
+    }
+
+    .steps {
+        &__inner {
+            .steps__info {
+                .steps__item {
+                    flex-direction: column;
+                    gap: 22px;
+                    align-items: center;
+                    margin-bottom: 76px;
+                    text-align: center;
+                }
+               
+                
+            }
+        }
+    }
+
+    
+
+}
+
+@media (max-width: 500px) {
+    .fast {
+        padding: 70px 10px;
+        .fast__text {
+            max-width: 90%;
+        }
+    }
+    .advantages {
+        &__inner {
+           max-width: 90%;
+           margin: 0 auto;
         }
     }
 }
