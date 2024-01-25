@@ -1,0 +1,46 @@
+.profile {
+    padding-top: 46px;
+    .profile__tabs {
+        display: flex;
+        border-bottom: 1px solid #EBEBEB;;
+        gap: 55px;
+        margin-bottom: 56px;
+        padding-bottom: 19px;
+        .profile__tab {
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            &.active {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .profile__content {
+        
+        
+        &.support {
+            .support__title {
+            }
+            .support__form {
+            }
+            .support__form-label {
+            }
+            .support__form-input {
+            }
+            .support__form-text {
+            }
+            .support__form-comment {
+            }
+            .support__form-btn {
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+.order {
+    padding-bottom: 115px;
+    .order__type {
+        display: flex;
+        gap: 45px;
+        margin-bottom: 52px;
+        .order__type-btn {
+            padding: 1px 13px;
+            border-radius: 20%;
+            transition: all 0.5s;
+            text-align: center;
+            background-color: transparent;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 25px;
+            &:hover {
+                background-color: var(--yellow-color);
+                font-weight: 600;
+            }
+            &.active {
+                background-color: var(--yellow-color);
+                font-weight: 600;
+            }
+        }
+        
+    }
+    
+    .order__info {
+        width: 100%;
+        tr{
+            &:nth-child(odd) {
+                background-color: #FBFBFB;;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.support {
+    &__title {
+        margin-bottom: 41px;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    &__form {
+        border-radius: 20px;
+        border: 1px solid #E8E8E8;
+        padding: 52px 60px;
+        &-label {
+            margin-bottom: 17px;
+        }
+        &-input, .support__form-text {
+            width: 100%;
+            border-radius: 10px;
+            background: #F1F1F1;
+            padding: 15px 30px;
+            border: none;
+            &::placeholder {
+                color: #A7A7A7;
+            }
+        }
+        &-text {
+            margin-top: 31px;
+            margin-bottom: 27px;
+            width: 100%;
+        }
+        &-comment {
+            color: #9A9A9A;
+            font-size: 13px;
+            margin-bottom: 27px;
+        }
+        &-btn {
+            width: 220px;
+            padding: 16px 0;
+        }
+    }
+    
+}
