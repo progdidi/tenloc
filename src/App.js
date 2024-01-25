@@ -32,9 +32,9 @@ function App() {
             <Route path="/guide" element={<GuidePage/>} />
             <Route path="/error" element={<ErrorPage/>} />
           </Routes>
-        </main>
+        </main> */}
         
-        <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </Router>
     

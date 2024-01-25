@@ -159,11 +159,20 @@
                 transform: translateY(0);
             }
         }
+
+        .header__buttons {
+            margin-left: none;
+        }
         .menu-btn {
             display: flex;
+            margin-left: 15px;
         }
 
     }
+}
+
+@media (max-width: 500px) {
+
 }
 
 

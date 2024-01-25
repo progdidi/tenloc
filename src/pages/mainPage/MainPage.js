@@ -21,7 +21,7 @@ const MainPage = () => {
         <>
             <Promo></Promo>
 
-            <DirectionSection></DirectionSection>
+            {/* <DirectionSection></DirectionSection>
 
             <ExcursionSection></ExcursionSection>
 
@@ -29,7 +29,7 @@ const MainPage = () => {
 
             <BlogSection></BlogSection>
 
-            <NewsletterSection></NewsletterSection>
+            <NewsletterSection></NewsletterSection> */}
 
 
         </>
