@@ -29,3 +29,11 @@
         line-height: 26px;
     }
 }
+
+@media (max-width: 1000px) {
+    .reviews__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

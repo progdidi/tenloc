@@ -15,13 +15,16 @@ const NewsletterSection = () => {
                         <p className="newsletter__text">Подписывайтесь на удобный для Вас мессенджер</p>
                         <div className="newsletter__items">
                             <a href="" className="newsletter__link">
-                                <img src={inst} alt="" className="newsletter__link-img" /> Instagram
+                                <img src={inst} alt="" className="newsletter__link-img" /> 
+                                <p className="newsletter__link-text">Instagram</p>
                             </a>
                             <a href="" className="newsletter__link">
-                                <img src={tg} alt="" className="newsletter__link-img" /> Telegram
+                                <img src={tg} alt="" className="newsletter__link-img" /> 
+                                <p className="newsletter__link-text">Telegram</p>
                             </a>
                             <a href="" className="newsletter__link">
-                                <img src={vk} alt="" className="newsletter__link-img" /> Vkontakte
+                                <img src={vk} alt="" className="newsletter__link-img" /> 
+                                <p className="newsletter__link-text">Vkontakte</p>
                             </a>
                         </div>
 

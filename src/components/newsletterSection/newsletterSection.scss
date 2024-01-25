@@ -10,7 +10,7 @@
         border-radius: 30px;
     }
     &__info {
-        max-width: 40%;
+        max-width: 590px;
     }
     &__title {
         font-size: 30px;
@@ -27,12 +27,14 @@
         gap: 21px;
         margin-bottom: 113px;
         .newsletter__link {
-            padding: 20px 17px 20px 27px ;
+            padding: 20px 0;
             background-color: #fff;
             border-radius: 9px;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
+            width: 160px;
             .newsletter__link-img {
                 display: inline-block;
             }
@@ -44,5 +46,61 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 19px; 
+    }
+}
+
+@media (max-width: 1100px) {
+    .newsletter {
+        &__inner {
+            padding: 90px 50px 50px 50px;
+        }
+
+        &__info {
+            max-width: 60%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .newsletter {
+        &__items {
+            .newsletter__link {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.13));
+                &-text {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        &__inner {
+            padding: 40px 30px 165px 30px;
+        }
+
+        &__info {
+            max-width: 80%;
+        }
+
+        &__text {
+            margin-bottom: 16px;
+        }
+
+        &__items {
+            margin-bottom: 67px;
+            .newsletter__link {
+                width: 47px;
+                height: 45px;
+            }
+        }
+
+        &__comment {
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+        }
     }
 }

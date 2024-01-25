@@ -61,4 +61,16 @@
     }
 }
 
+@media (max-width: 550px) {
+    .excursion__item {
+        &-about {
+            padding: 15px;
+            .excursion__item-descr {
+               display: none;
+                
+            }
+        }
+    }
+}
+
 

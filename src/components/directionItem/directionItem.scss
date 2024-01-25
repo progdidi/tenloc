@@ -24,3 +24,16 @@
         font-weight: 500;
     }
 }
+
+@media (max-width: 1200px) {
+    .direction__item {
+        padding: 30px;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .direction__item {
+        min-height: 300px;
+    }
+}

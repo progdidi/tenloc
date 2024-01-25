@@ -15,3 +15,24 @@
         grid-gap: 30px;
     }
 }
+
+@media (max-width: 1000px) {
+    .directions {
+        &__items {
+            max-width: 90%;
+            margin: 0 auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+
+
+@media (max-width: 620px) {
+    .directions {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

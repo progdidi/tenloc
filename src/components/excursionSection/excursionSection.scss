@@ -33,3 +33,21 @@
         color: #000;
     }
 }
+
+@media (max-width: 1200px) {
+    .excursions {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .excursions {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}

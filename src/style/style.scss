@@ -41,6 +41,7 @@ body {
 .section__title {
     font-size: 36px;
     font-weight: 800;
+    line-height: 45px;
 }
 
 .main-btn {
@@ -114,6 +115,13 @@ body {
             border-radius: 10px;
             background-color: #F1F1F1;
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .section__title {
+        font-size: 26px;
+        line-height: 35px;
     }
 }
 

@@ -11,3 +11,9 @@
         gap: 47px;
     }
 }
+
+@media (max-width: 1200px) {
+    .blog__items {
+        gap: 20px;
+    }
+}

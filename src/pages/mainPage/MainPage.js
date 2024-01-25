@@ -19,17 +19,17 @@ import NewsletterSection from '../../components/newsletterSection/NewsletterSect
 const MainPage = () => {
     return ( 
         <>
-            <Promo></Promo>
+            {/* <Promo></Promo> */}
 
-            {/* <DirectionSection></DirectionSection>
+            <DirectionSection></DirectionSection>
 
-            <ExcursionSection></ExcursionSection>
+            {/* <ExcursionSection></ExcursionSection> */}
 
             <ReviewSection></ReviewSection>
 
-            <BlogSection></BlogSection>
+            {/* <BlogSection></BlogSection> */}
 
-            <NewsletterSection></NewsletterSection> */}
+            <NewsletterSection></NewsletterSection>
 
 
         </>
