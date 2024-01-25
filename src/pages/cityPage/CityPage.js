@@ -1,9 +1,8 @@
 import DateInput from "../../components/dateInput/DateInput";
 
-import ExcursionItem from "../../components/excursionItem/ExcursionItem";
-import { excursions } from "../../helpers/excursions/excursions";
 
 import DirectionSection from "../../components/directionSection/DirectionSection";
+import ExcursionSection from "../../components/excursionSection/ExcursionSection";
 import ReviewSection from "../../components/reviewSection/ReviewSection";
 
 //styles
@@ -21,20 +20,8 @@ const CityPage = () => {
                     <DateInput/>
 
                     <div className="city__excursions">
-                        <div className="city__excursions-inner">
-                            {excursions.map((excursion) => {
-                                return (
-                                    <ExcursionItem
-                                        key={excursion.id}
-                                        img={excursion.img}
-                                        price={excursion.price}
-                                        title={excursion.title}
-                                        descr={excursion.descr}
-                                    />
-                                )
-                            })}
-                        </div>
-
+                        
+                        <ExcursionSection></ExcursionSection>
                         <button className="city__excursions-btn">Загрузить еще</button>
                     </div>
                 </div>

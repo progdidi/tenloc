@@ -29,8 +29,6 @@ const GuidePage = () => {
         <section className="guide-who">
             <div className="container">
                 <div className="guide-who__inner">
-                    <img src={who} alt="" className="guide-who__img" />
-
                     <div className="guide-who__info">
                     <h2 className="guide-who__title page__title">Кто может стать гидом</h2>
                     <p className="guide-who__text">Мы работаем и с профессиональными гидами, и с влюбленными в город энтузиастами, которые хотят проводить экскурсии. С Трипстером сотрудничают журналисты, историки, архитекторы, искусствоведы и другие харизматичные рассказчики.

@@ -43,7 +43,9 @@
 
 
 .guide-who {
-    background-color: #9BD5EB;
+    background-image: url('./images/who.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 91px;
     &__inner {
         display: flex;
@@ -149,16 +151,16 @@
     padding-top: 93px;
     padding-bottom: 110px;
     margin-bottom: 40px;
-    .conditions__title {
+    &__title {
         margin-bottom: 68px;
     }
-    .conditions__inner {
+    &__inner {
         display: flex;
         gap: 72px;
         align-items: flex-start;
     }
     
-    .conditions__info {
+    &__info {
         max-width: 40%;
         .conditions__item {
             margin-bottom: 54px;
@@ -198,7 +200,7 @@
     }
     
     
-    .conditions__summary {
+    &__summary {
         padding: 54px 103px 26px 51px;
         width: 52%;
         border-radius: 20px;
@@ -224,7 +226,7 @@
 .registration {
     padding: 50px 0;
     margin-bottom: 100px;
-    .registration__title {
+    &__title {
         font-size: 30px;
         font-style: normal;
         font-weight: 700;
@@ -232,8 +234,8 @@
         margin-bottom: 55px;
         text-align: center;
     }
-    .registration__form {
-        max-width: 55%;
+    &__form {
+        max-width: 790px;
         margin: 0 auto;
         &-info {
             display: grid;
@@ -283,4 +285,105 @@
 
     }
     
+}
+
+@media (max-width: 1200px) {
+    .excursion-offer {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            max-width: 80%;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            .excursion-offer__item {
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .conditions {
+        &__title {
+            text-align: center;
+        }
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__info {
+            max-width: 80%;
+        }
+
+        &__summary {
+            width: 80%;
+            padding: 40px 50px 20px 40px;
+        }
+    }
+
+    .registration {
+        &__form {
+            max-width: 80%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .excursion-offer {
+        &__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    .conditions {
+
+        &__summary {
+            width: 90%;
+            padding: 20px;
+        }
+    }
+
+    .registration {
+        &__form {
+            max-width: 80%;
+            &-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            &-input, .registration__form-text {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .registration {
+        &__form {
+            max-width: 90%;
+            &-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            &-input, .registration__form-text {
+                padding: 10px 12px;
+            }
+
+        }
+    }
 }

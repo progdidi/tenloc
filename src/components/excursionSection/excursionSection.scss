@@ -51,3 +51,19 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .excursions {
+        &__title {
+            text-align: center;
+            display: block;
+            margin-right: 0;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -102,3 +102,12 @@
         }
     }
 }
+
+@media (max-width: 450px) {
+    .booking {
+        width: 330px;
+        &__main {
+            padding: 20px;
+        }
+    }
+}

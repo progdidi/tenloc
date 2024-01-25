@@ -18,14 +18,11 @@
     }
 
     &__excursions {
-        &-inner {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 35px;
-            grid-row-gap: 30px;
-            margin-bottom: 90px;
-        }
 
+        .excursions__btn {
+            display: none;
+        }
+     
         &-btn {
             display: block;
             width: 200px;
