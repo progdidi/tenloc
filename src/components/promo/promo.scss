@@ -1,5 +1,3 @@
-
-
 .promo {
     margin-bottom: 95px;
     &__inner {
@@ -20,7 +18,7 @@
             line-height: 52px; 
             position: relative;
             padding-bottom: 41px;
-            max-width: 50%;
+            max-width: 550px;
             margin: 0 auto;
             margin-bottom: 8px;
             &::after {
@@ -42,7 +40,7 @@
             margin-bottom: 48px;
         }
         .promo__form {
-            width: 54%;
+            width: 780px;
             background-color: #fff;
             padding: 10px 10px 10px 23px;
             border-radius: 100px;
@@ -115,7 +113,18 @@
         .promo__prompts {
             display: flex;
             align-items: center;
-            gap: 15px;
+            justify-content: center;
+            gap: 19px;
+            max-width: 50%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            &-items {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
             .promo__prompt {
                 padding: 6px 14px;
                 border-radius: 30px;
@@ -126,12 +135,80 @@
                     background-color: var(--yellow-color);
                     color: var(--black-color);
                 }
-                &:first-child {
-                    margin-left: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .promo {
+        &__inner {
+            .promo__form {
+                border-radius: 20px;
+                max-width: 60%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &-field {
+                    width: 100%;
+                    margin-bottom: 11px;
+                    
+                    &.location {
+                        border-bottom: 1px solid #EBEBEB;
+                        padding-bottom: 11px;
+                    }
+                }
+                &-input {
+                    padding-bottom: 11px;
+                }
+                &-btn {
+                    width: 100%;
+                    margin-left: 0;
                 }
             }
         }
     }
 }
+
+@media (max-width: 750px) {
+    .promo {
+        &__inner {
+            .promo__title {
+                font-size: 33px;
+                line-height: 40px;
+            }
+            .promo__form {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .promo {
+        &__inner {
+            .promo__title {
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 32px;
+                max-width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .promo__text {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+            }
+            .promo__form {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
 
 

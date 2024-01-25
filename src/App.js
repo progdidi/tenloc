@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <Header></Header>
 
-        {/* <main className="main">
+        <main className="main">
           <Routes>
             <Route path="/" element={<MainPage/>} />
             <Route path="/city" element={<CityPage/>} />
@@ -32,7 +32,7 @@ function App() {
             <Route path="/guide" element={<GuidePage/>} />
             <Route path="/error" element={<ErrorPage/>} />
           </Routes>
-        </main> */}
+        </main>
         
         <Footer></Footer>
       </div>

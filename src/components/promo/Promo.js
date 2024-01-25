@@ -25,11 +25,17 @@ const Promo = () => {
                         <button className="promo__form-btn main-btn">Найти</button>
                     </form>
 
-                    <div className="promo__prompts">Часто ищут:
-                        <button className="promo__prompt">Дубай</button>
-                        <button className="promo__prompt">Стамбул</button>
-                        <button className="promo__prompt">Санкт-петербург</button>
-                        <button className="promo__prompt">Казань</button>
+                    <div className="promo__prompts">
+                        <p className="promo__prompts-text">
+                            Часто ищут:
+                        </p>
+                        <div className="promo__prompts-items">
+                            <button className="promo__prompt">Дубай</button>
+                            <button className="promo__prompt">Стамбул</button>
+                            <button className="promo__prompt">Санкт-петербург</button>
+                            <button className="promo__prompt">Казань</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
