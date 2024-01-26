@@ -13,12 +13,12 @@ const ProfileSettings = ({avatar, mail, phone}) => {
                     <tr className="settings__info-item">
                         <p className="settings__info-item-data">Электронная почта</p>
                         <a href="" className="settings__info-item-link">{mail}</a>
-                        <button className="settings__infoitem-btn">Изменить</button>
+                        <button className="settings__info-item-btn">Изменить</button>
                     </tr>
                     <tr className="settings__info-item">
                         <p className="settings__info-item-data">Контактный телефон</p>
                         <a href="" className="settings__info-item-link">{phone}</a>
-                        <button className="settings__infoitem-btn">Изменить</button>
+                        <button className="settings__info-item-btn">Изменить</button>
                     </tr>
                 </table>
                 <p className="settings__info-comment">Ваша контактная информация показывается только после подтверждения бронирования, чтобы с вами можно было связаться.</p>

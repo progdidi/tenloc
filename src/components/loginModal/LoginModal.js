@@ -9,7 +9,7 @@ const LoginModal = ({showLogin}) => {
 
     return ( 
         <>
-            <div className={showLogin? "modal" : "modal active"}>
+            <div className={showLogin? "modal active" : "modal"}>
                 <div className="modal__overlay">
                     <div className="modal__content login-modal">
                         <button className="modal-close__btn">x</button>

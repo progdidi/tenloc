@@ -1,10 +1,9 @@
-.modal {
-    display: block;
-    &.active {
-        display: none;
-    }
-}
-
 .login-modal {
     max-width: 480px;
+}
+
+@media (max-width: 700px) {
+    .login-modal {
+        max-width: 80%;
+    }
 }

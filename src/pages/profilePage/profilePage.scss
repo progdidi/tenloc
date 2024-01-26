@@ -1,6 +1,6 @@
 .profile {
     padding-top: 46px;
-    .profile__tabs {
+    &__tabs {
         display: flex;
         border-bottom: 1px solid #EBEBEB;;
         gap: 55px;
@@ -18,22 +18,26 @@
     }
 
     .profile__content {
-        
-        
-        &.support {
-            .support__title {
-            }
-            .support__form {
-            }
-            .support__form-label {
-            }
-            .support__form-input {
-            }
-            .support__form-text {
-            }
-            .support__form-comment {
-            }
-            .support__form-btn {
+       padding-bottom: 117px;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile {
+        &__tabs {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        &__tabs {
+            gap: 20px;
+            margin-bottom: 30px;
+            .profile__tab {
+                font-size: 14px;
+                line-height: 20px;
             }
         }
     }

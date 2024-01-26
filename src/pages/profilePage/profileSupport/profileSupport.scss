@@ -40,3 +40,32 @@
     }
     
 }
+
+@media (max-width: 700px) {
+    .support {
+        &__form {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .support {
+        &__form {
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 15px 20px;
+            &-input, .support__form-text {
+                padding: 10px 15px;
+            }
+            &-btn {
+                width: 60%;
+                padding: 10px 0;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}

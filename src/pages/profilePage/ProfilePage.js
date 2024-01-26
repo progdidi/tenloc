@@ -24,11 +24,11 @@ const ProfilePage = () => {
                 </div>
 
                 <div className="profile__content">
-                    <ProfileOrder></ProfileOrder>
+                    <ProfileOrder  show={isorderOpen}></ProfileOrder>
 
-                    <ProfileSettings/>
+                    <ProfileSettings show={isSettingsOpen}/>
 
-                    <ProfileSupport></ProfileSupport>
+                    <ProfileSupport show={isSupportOpen}></ProfileSupport>
                 </div>
                 
             </div>

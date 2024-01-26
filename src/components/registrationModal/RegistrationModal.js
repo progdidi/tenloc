@@ -2,7 +2,7 @@ import './registrationModal.scss';
 
 const RegistrationModal = ({showRegistration}) => {
     return ( 
-        <div className={showRegistration? "modal" : "modal active"}>
+        <div className={showRegistration ? "modal active" : "modal"}>
         <div className="modal__overlay">
             <div className="modal__content registration-modal">
                 <button className="modal-close__btn">x</button>

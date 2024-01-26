@@ -1,5 +1,8 @@
 .order {
-    padding-bottom: 115px;
+    display: none;
+    &.active {
+        display: block;
+    }
     .order__type {
         display: flex;
         gap: 45px;
@@ -31,6 +34,14 @@
             &:nth-child(odd) {
                 background-color: #FBFBFB;;
             }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .order {
+        .order__type {
+            gap: 15px;
         }
     }
 }

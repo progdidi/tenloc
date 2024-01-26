@@ -4,9 +4,9 @@ import './profileOrder.scss';
 import OrderItem from '../../../components/orderItem/OrderItem';
 import {orders} from '../../../helpers/orders/orders';
 
-const ProfileOrder = ({showOrder}) => {
+const ProfileOrder = ({show}) => {
     return ( 
-        <div className="order">
+        <div className={show ? "order active" : "order"}>
             <div className="order__type">
                 <button className="order__type-btn active" data-order="all">Все</button>
                 <button className="order__type-btn" data-order="active">Активные</button>
