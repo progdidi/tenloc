@@ -1,7 +1,7 @@
 import './profileSettings.scss';
 
 
-const ProfileSettings = ({avatar, mail, phone}) => {
+const ProfileSettings = ({avatar, mail, phone, id="settings"}) => {
     return ( 
         <div className="settings">
 

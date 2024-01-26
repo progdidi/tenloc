@@ -5,30 +5,41 @@ import { profileInfo } from '../../helpers/profileInfo/profileInfo';
 import ProfileOrder from './profileOrder/ProfileOrder';
 import ProfileSupport from './profileSupport/ProfileSupport';
 import { useState } from 'react';
+import TabNavItem from './tabNavItem/TabNavItem';
+import TabContent from './tabContent/TabContent';
 
 
 const ProfilePage = () => {
 
-    const [isorderOpen, setIsOrderOpen] = useState(true);
-    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-    const [isSupportOpen, setIsSupportOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState("order");
 
     return ( 
         <>
         <div className="profile">
             <div className="container">
                 <div className="profile__tabs">
-                    <button className="profile__tab active" data-profile="order">Мои заказы</button>
-                    <button className="profile__tab" data-profile="settings">Настройки профиля</button>
-                    <button className="profile__tab" data-profile="support">Написать в поддержку</button>
+                    <TabNavItem title="Мои заказы" id="order" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                    <TabNavItem title="Настройки профиля" id="settings" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                    <TabNavItem title="Написать в поддержку" id="support" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                    
                 </div>
 
+                <TabContent/>
+
                 <div className="profile__content">
-                    <ProfileOrder  show={isorderOpen}></ProfileOrder>
 
-                    <ProfileSettings show={isSettingsOpen}/>
+                    <TabContent id="order" activeTab={activeTab}>
+                        <ProfileOrder/>
+                    </TabContent>
 
-                    <ProfileSupport show={isSupportOpen}></ProfileSupport>
+                    <TabContent id="settings" activeTab={activeTab}>
+                        <ProfileSettings/>
+                    </TabContent>
+
+                    <TabContent id="support" activeTab={activeTab}>
+                        <ProfileSupport/>
+                    </TabContent>
+
                 </div>
                 
             </div>

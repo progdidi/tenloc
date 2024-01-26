@@ -1,6 +1,6 @@
 import './profileSupport.scss';
 
-const ProfileSupport = () => {
+const ProfileSupport = ({id="support"}) => {
     return ( 
         <div className="support">
             <h5 className="support__title">Запрос в тех поддержку</h5>

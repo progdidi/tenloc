@@ -1,0 +1,32 @@
+.order-item {
+    &__data {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 25px 0 27px;
+        &-name {
+            max-width: 270px;
+        }
+        &-ticket {
+            color: #000;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            text-decoration-line: underline;
+        }
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    &__btn {
+        padding: 10px 10px 14px 10px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}

@@ -4,7 +4,7 @@ import './profileOrder.scss';
 import OrderItem from '../../../components/orderItem/OrderItem';
 import {orders} from '../../../helpers/orders/orders';
 
-const ProfileOrder = ({show}) => {
+const ProfileOrder = ({show = true, id="order"}) => {
     return ( 
         <div className={show ? "order active" : "order"}>
             <div className="order__type">

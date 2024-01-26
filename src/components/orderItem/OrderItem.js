@@ -3,11 +3,14 @@ import './orderItem.scss';
 const OrderItem = ({img, name, city, price, amount, date, currency}) => {
     return ( 
         <tr className="order-item">
-            <td className="order-item__data">
+            <td className="order-item__data img">
                 <img src={img} alt="" className="order-item__img" />
             </td>
             <td className="order-item__data">{city}</td>
-            <td className="order-item__data">{name}</td>
+            <td className="order-item__data name">
+                <p className="order-item__data-name">{name}</p>
+                <a href="" className="order-item__data-ticket">Открыть билет</a>
+            </td>
             <td className="order-item__data">
                 <h6 className="order-item__title">Дата и время</h6>
                 {date}
