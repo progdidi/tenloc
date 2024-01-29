@@ -1,6 +1,5 @@
-
 .order-modal {
-    max-width: 70%;
+    max-width: 1000px;
     margin: 0 auto;
     border-radius: 20px;
     background-color: #FFF;
@@ -16,136 +15,152 @@
     &__info {
         margin-bottom: 35px;
     }
-}
 
-.order-modal__payment {
-    margin-bottom: 54px;
-    &-title {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 40px;
-        margin-bottom: 5px;
-    }
-    &-text {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        margin-bottom: 30px;
-    }
-    .payment__items {
-        display: flex;
-        justify-content: space-between;
-        .payment__item-btn {
-            width: 290px;
-            padding: 43px 28px;
-            border-radius: 10px;
-            border: 1px solid #DADADA;
-            background-color: #FFF;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &:hover {
-                border: 4px solid var(--yellow-color);
-            }
-            &.active {
-                border: 4px solid var(--yellow-color);
-            }
-            .payment__item-img {
-                margin-bottom: 16px;
-            }
-            .payment__item-text {
-                color: #000;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px;
-            }
+    &__payment {
+        margin-bottom: 54px;
+        &-title {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+            margin-bottom: 5px;
         }
-        
-    }
-}
-
-
-
-.order-modal__form {
-    border-radius: 20px;
-    border: 1px solid #EEE;
-    background-color: #FFF;
-    padding: 34px 45px 40px 45px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 45px;
-    .order-modal__form-main {
-        .order-modal__form-label {
+        &-text {
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 26px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
-        .order-modal__form-input {
-            display: block;
-            margin-top: 8px;
-            padding: 14px 25px;
-            border-radius: 100px;
-            background-color: #F1F1F1;
-            border: none;
-            margin-bottom: 33px;
-            width: 100%;
-            &::placeholder {
-                color: #A4A4A4;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px;
+        .payment__items {
+            display: flex;
+            justify-content: space-between;
+            .payment__item-btn {
+                width: 290px;
+                padding: 43px 28px;
+                border-radius: 10px;
+                border: 1px solid #DADADA;
+                background-color: #FFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    border: 4px solid var(--yellow-color);
+                }
+                &.active {
+                    border: 4px solid var(--yellow-color);
+                }
+                .payment__item-img {
+                    margin-bottom: 16px;
+                }
+                .payment__item-text {
+                    color: #000;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
             }
-        }
-        .order-modal__form-btn {
-            padding: 15px 50px;
-            color: #000;
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 25px; 
-            margin-bottom: 14px;
-            width: 100%;
-        }
-        .order-modal__form-comment {
-            font-size: 11px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 22px;
-            .link {
-                text-decoration-line: underline;
-            }
+            
         }
     }
-
-    .order-modal__form-summ {
-        padding: 33px;
+    
+    &__form {
         border-radius: 20px;
-        background-color: #F6F6F6;
-        .order-total {
-            .order-total__item {
+        border: 1px solid #EEE;
+        background-color: #FFF;
+        padding: 34px 45px 40px 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 45px;
+        .order-modal__form-main {
+            .order-modal__form-label {
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26px;
-                margin-bottom: 5px;
+                margin-bottom: 25px;
             }
-            .order-total__item-title {
-                
+            .order-modal__form-input {
+                display: block;
+                margin-top: 8px;
+                padding: 14px 25px;
+                border-radius: 100px;
+                background-color: #F1F1F1;
+                border: none;
+                margin-bottom: 33px;
+                width: 100%;
+                &::placeholder {
+                    color: #A4A4A4;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
             }
-            .order-total__item-sum {
-                text-align: right;
-                font-weight: 700;
+            .order-modal__form-btn {
+                padding: 15px 50px;
+                color: #000;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 25px; 
+                margin-bottom: 14px;
+                width: 100%;
             }
+            .order-modal__form-comment {
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                .link {
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    
+        .order-modal__form-summ {
+            padding: 33px;
+            border-radius: 20px;
+            background-color: #F6F6F6;
+            .order-total {
+                .order-total__item {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    margin-bottom: 5px;
+                }
+                .order-total__item-title {
+                    
+                }
+                .order-total__item-sum {
+                    text-align: right;
+                    font-weight: 700;
+                }
+            }
+            
         }
         
     }
     
 }
+
+@media (max-width: 1200px) {
+    .order-modal {
+        max-width: 90%;
+        padding: 20px 30px;
+        .order-modal__item-data{
+            &.name {
+            padding: 10px 15px;
+            }
+
+            &.date {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
 
 

@@ -24,8 +24,6 @@ const ProfilePage = () => {
                     
                 </div>
 
-                <TabContent/>
-
                 <div className="profile__content">
 
                     <TabContent id="order" activeTab={activeTab}>

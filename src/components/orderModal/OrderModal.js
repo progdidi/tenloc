@@ -9,9 +9,9 @@ import yoomoney from './images/yoomoney.png';
 //styles
 import './orderModal.scss';
 
-const OrderModal = ({showOrder}) => {
+const OrderModal = ({showOrder, id="order"}) => {
     return ( 
-        <div className={showOrder ? "modal" : "modal active"}>
+        <div className={showOrder ? "modal active" : "modal"}>
             <div className="modal__overlay">
                 <div className="modal__content order-modal">
                     <button className="modal-close__btn">x</button>

@@ -2,7 +2,7 @@ import './loginModal.scss';
 import RegistrationModal from '../registrationModal/RegistrationModal';
 import { useState } from 'react';
 
-const LoginModal = ({showLogin}) => {
+const LoginModal = ({showLogin, id="login"}) => {
 
     const [isRegistrationOpen, setIsRegistrationOpen] = useState(false)
 

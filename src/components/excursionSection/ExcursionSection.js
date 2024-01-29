@@ -21,6 +21,7 @@ const ExcursionSection = () => {
                                 price={excursion.price}
                                 title={excursion.title}
                                 descr={excursion.descr}
+                                time={excursion.time}
                             />
                         )
                     })}

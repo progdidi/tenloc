@@ -4,7 +4,7 @@ import plus from './plus.svg';
 //styles
 import './excursionItem.scss';
 
-const ExcursionItem = ({img, title, descr, price}) => {
+const ExcursionItem = ({img, title, descr, price, time}) => {
     return ( 
         <div className="excursion__item">
             <img src={fav} alt="" className="excursion__item-fav" />
@@ -16,7 +16,7 @@ const ExcursionItem = ({img, title, descr, price}) => {
 
             <div className="excursion__item-details">
                 <p className="excursion__item-price"> <span>от {price} ₽</span> / с чел</p>
-                <input type="text" className="excursion__item-date" />
+                <p className="excursion__item-time">{time}</p>
                 <button className="excursion__item-btn">
                     <img src={plus} alt="" className="excursion__item-plus" />
                 </button>

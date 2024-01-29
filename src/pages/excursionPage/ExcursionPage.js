@@ -21,7 +21,9 @@ import ExcursionBooking from '../../components/excursionBooking/ExcursionBooking
 import ExcursionSection from '../../components/excursionSection/ExcursionSection';
 import Basket from '../../components/basket/Basket';
 
+
 const ExcursionPage = () => {
+
     return ( 
         <>
             <section className="excursion">
@@ -112,6 +114,7 @@ const ExcursionPage = () => {
                         <ExcursionBooking/>
 
                         <Basket></Basket>
+
                     </div>
 
                 </div>

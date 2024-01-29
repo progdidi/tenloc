@@ -44,3 +44,12 @@
         border-bottom: 1px solid #EDEDED;
     }
 }
+
+@media (max-width: 700px) {
+    .order-modal__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

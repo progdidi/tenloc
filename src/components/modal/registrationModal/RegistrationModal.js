@@ -1,6 +1,6 @@
 import './registrationModal.scss';
 
-const RegistrationModal = ({showRegistration}) => {
+const RegistrationModal = ({showRegistration, id="registration"}) => {
     return ( 
         <div className={showRegistration ? "modal active" : "modal"}>
         <div className="modal__overlay">

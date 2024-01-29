@@ -30,3 +30,17 @@
         line-height: 25px;
     }
 }
+
+@media (max-width: 800px) {
+    .order-item {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &__data {
+            padding: 5px 0;
+        }
+    }
+}
