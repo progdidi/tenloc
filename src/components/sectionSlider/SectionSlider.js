@@ -1,6 +1,8 @@
 import ReviewsItem from '../reviewsItem/ReviewsItem';
 import './reviewsSlider.scss';
 
+import SliderButtons from './sliderButtons/SliderButtons';
+
 
 
 const ReviewsSlider = () => {

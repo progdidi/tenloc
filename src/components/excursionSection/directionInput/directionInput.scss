@@ -1,23 +1,26 @@
-.date-input__form {
+.direction-select__form {
     position: relative;
     display: inline-block;
+    
         &::after {
             position: absolute;
             content: '';
-            background-image: url('./calendar.svg');
+            background-image: url('./arrow.svg');
             background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
+            width: 7px;
+            height: 7px;
             top: 50%;
             transform: translateY(-50%);
-            right: 20px;
+            right: 23px;
         }
-    .date__input {
+    .direction-select {
         padding: 14px 23px;
         border-radius: 10px;
         border: 1px solid #E6E6E6;
+        margin-right: 30px;
         cursor: pointer;
-        
+        &__item {
+    
+        }
     }
 }
-

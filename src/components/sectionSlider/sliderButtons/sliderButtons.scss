@@ -1,0 +1,11 @@
+.slider__buttons {
+    display: flex;
+    gap: 15px;
+    .slider__btn {
+        border: 2px solid #D2D2D2;
+        padding: 14px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+    }
+}

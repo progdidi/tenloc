@@ -11,6 +11,7 @@
         padding-bottom: 16px;
         border-bottom: 1px solid #EBEBEB;
         margin-bottom: 8px;
+        font-weight: 500;
     }
     &-about {
         padding-bottom: 11px;
@@ -18,9 +19,22 @@
         border-bottom: 1px solid #EBEBEB;
         display: flex;
         gap: 50px;
+        color: #7B7B7B;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
         .reviews__item-tour {
+            
+            span {
+                color: var(--black-color);
+                text-decoration-line: underline;
+            }
         }
         .reviews__item-rate {
+            display: flex;
+            align-items: center;
+            gap: 14px;
         }
     }
     

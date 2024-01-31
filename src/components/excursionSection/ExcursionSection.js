@@ -3,14 +3,16 @@ import './excursionSection.scss';
 //components
 import ExcursionItem from '../excursionItem/ExcursionItem';
 import { excursions } from '../../helpers/excursions/excursions';
+import DateInput from '../dateInput/DateInput';
+import DirectionInput from './directionInput/DirectionInput';
 
 const ExcursionSection = () => {
     return ( 
         <section className="excursions">
             <div className="container">
                 <h3 className="excursions__title section__title">Экскурсии</h3>
-                <input type="text" className="excursions__input" />
-                <input type="text" className="excursions__input" />
+                <DirectionInput/>
+                <DateInput/>
 
                 <div className="excursions__items">
                     {excursions.map((excursion) => {
