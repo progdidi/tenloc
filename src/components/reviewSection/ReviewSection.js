@@ -3,6 +3,8 @@ import './reviewSection.scss';
 import ReviewsItem from '../reviewsItem/ReviewsItem';
 import { reviews } from '../../helpers/reviews/reviews';
 
+import SliderDots from '../sectionSlider/sliderDots/SliderDots';
+
 const ReviewSection = () => {
     return ( 
         <section className="reviews">
@@ -26,6 +28,8 @@ const ReviewSection = () => {
                         )
                     })}
                 </div>
+
+                <SliderDots/>
                 
             </div>
         </section>

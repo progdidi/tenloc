@@ -1,0 +1,14 @@
+.slider-dots {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    &__item {
+        width: 12px;
+        height: 12px;
+        background-color: var(--light-grey-color);
+        border-radius: 50%;
+        &.active {
+            background-color: var(--yellow-color);
+        }
+    }
+}
