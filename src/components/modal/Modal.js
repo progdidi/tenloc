@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ModalContent from "./modalContent/ModalContent";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import LoginModal from "./loginModal/LoginModal";
 import RegistrationModal from "./registrationModal/RegistrationModal";
@@ -7,42 +8,31 @@ import OrderModal from "../orderModal/OrderModal";
 
 import './modal.scss';
 
-const Modal = ({id, isOpen}) => {
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [activeModal, setActiveModal] = useState(id);
-
-    const openModal = () => {
-        setIsModalOpen(true)
-    }
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        console.log(isModalOpen);
-    }
+const Modal = ({showModal, setShowModal, activeModal, children}) => {
 
     return ( 
         <>
-            <div className={isOpen ? "modal active" : "modal"}>
-                <div className="overlay">
-                    <div className="modal__window">
-                        <button className="modal-close__btn" onClick={() => closeModal()}>X</button>
-                        <ModalContent id="login" activeModal={activeModal}>
-                            <LoginModal/>
-                        </ModalContent>
+            <div className={showModal ? "modal active" : "modal"} onClick={() => setShowModal(false)}>
+                <div className={showModal ? "modal__window active" : "modal__window"} onClick={(e) => e.stopPropagation()}>
+                    <button className="modal-close__btn" onClick={() => setShowModal(false)}>X</button>
+                    {children}
+                    <ModalContent id="login" activeModal={activeModal}>
+                        <LoginModal/>
+                    </ModalContent>
 
-                        <ModalContent id="registration" activeModal={activeModal}>
-                            <RegistrationModal/>
-                        </ModalContent>
+                    <ModalContent id="registration" activeModal={activeModal}>
+                        <RegistrationModal/>
+                    </ModalContent>
 
-                        <ModalContent id="order" activeModal={activeModal}>
-                            <OrderModal/>
-                        </ModalContent>
-                    </div>
+                    <ModalContent id="order" activeModal={activeModal}>
+                        <OrderModal/>
+                    </ModalContent>
                 </div>
             </div>
         </>
      );
 }
+
+
  
 export default Modal;

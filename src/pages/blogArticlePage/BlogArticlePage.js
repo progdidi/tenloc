@@ -1,17 +1,27 @@
 import './blogArticlePage.scss';
 
+//images
 import example from './example.png';
 import example2 from './example2.png';
 import example3 from './example3.png';
+import back from './back.svg';
 
 import BlogSection from '../../components/blogSection/BlogSection';
 
-const BlogArticlePage = () => {
+const BlogArticlePage = ({title, descr, text}) => {
     return ( 
         <>
             <section className="article">
                 <div className="container">
                     <div className="article__inner">
+                        <button className="article-back__btn">
+                            <img src={back} alt="" className="article-back__btn-img" />
+                            назад
+                        </button>
+
+                        <div className="article__content">
+                        
+
                         <h2 className="article__title page__title">Экскурсия в Выборг из Санкт-Петербурга с посещением замка и парка Монрепо</h2>
 
                         <p className="article__descr">Город Выборг находится на северо-востоке побережья Финского залива. Он был основан в 1293г. Историки до сих пор не пришли к единому мнению какое слово стало ключом к названию города. Одни говорят про славянское слово «Выбор», другие про старонорвежский язык.</p>
@@ -58,8 +68,8 @@ const BlogArticlePage = () => {
 
                         Прибытие в Санкт-Петербург. Окончание экскурсии в Выборг у Московского вокзала.
                         Приобретайте на нашем сайте билеты и увидимся на экскрусии! Маршрут и длительность экскурсии могут зависеть от дорожной ситуации, а также от авторской подачи гида. Например, в случае пробок на дороге, перекрытия проезжей части и при других форс-мажорных обстоятельствах. Пожалуйста, учитывайте это при планировании ваших поездок, так как в этих случаях продолжительность экскурсии может значительно увеличиться.</p>
+                        </div>
                     </div>
-                    
                 </div>
             </section>
 

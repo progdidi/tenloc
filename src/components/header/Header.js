@@ -15,10 +15,10 @@ import './header.scss';
 const Header = () => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [isLoginOpen, setLoginOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    //модальное окно
+    const [showModal, setShowModal] = useState(false);
 
 
 
@@ -73,17 +73,15 @@ const Header = () => {
                     </button>
 
                     <div className="header__buttons">
-                        <button className="header-btn fav" onClick={() => setIsModalOpen(true)}>
+                        <button className="header-btn fav">
                             <img src={fav} alt="" className="header-btn__img" />
                         </button>
-                        <button className="header-btn login" onClick={() => {setLoginOpen(!isLoginOpen)}}>Войти</button>
+                        <button className="header-btn login" onClick={() => setShowModal(true)}>Войти</button>
+                        <Modal showModal={showModal} id="login" setShowModal={setShowModal} activeModal="login"/>
                     </div>
                 </div>
             </div>
 
-            <Modal isOpen={isModalOpen} />
-
-            <LoginModal showLogin={isLoginOpen}/>
         </header>
      );
 }

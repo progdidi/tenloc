@@ -1,10 +1,22 @@
 .article {
+    padding-top: 80px;
     padding-bottom: 106px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px; 
     &__inner {
+        position: relative;
+        .article-back__btn {
+            display: flex;
+            gap: 13px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__content {
         max-width: 70%;
         margin: 0 auto;
     }
