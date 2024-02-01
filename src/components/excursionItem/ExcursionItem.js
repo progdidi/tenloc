@@ -8,6 +8,7 @@ import './excursionItem.scss';
 //components
 import Basket from '../basket/Basket';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const ExcursionItem = ({img, title, descr, price, time}) => {
 
@@ -21,7 +22,7 @@ const ExcursionItem = ({img, title, descr, price, time}) => {
 
     return ( 
         <>
-            <div className="excursion__item">
+            <NavLink to="/excursion" className="excursion__item">
                 <img src={fav} alt="" className="excursion__item-fav" />
                 <img src={img} alt="" className="excursion__item-img" />
                 <div className="excursion__item-about">
@@ -38,7 +39,7 @@ const ExcursionItem = ({img, title, descr, price, time}) => {
                     </button>
                 </div>
                 
-            </div>
+            </NavLink>
 
             <Basket showBasket={showBasket}/>
         </>

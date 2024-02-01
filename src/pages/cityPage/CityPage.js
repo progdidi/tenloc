@@ -22,7 +22,7 @@ const CityPage = () => {
                     <div className="excursion-filter">
                         <div className="excursion-filter__item">
                             <label htmlFor="" className="excursion-filter__item-label">Дата
-                              <input type="text" className="excursion-filter__item-input" />
+                              <input type="text" className="excursion-filter__item-input" ></input>
                               <input type="text" className="excursion-filter__item-input" />
                             </label>
                         </div>

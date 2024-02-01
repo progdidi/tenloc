@@ -39,15 +39,15 @@ const Footer = () => {
                         <li className="footer__list-item">
                             <NavLink to="/blog" className="logo">Блог</NavLink>
                         </li>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">Часто задаваемые вопросы</a></li>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">Способы оплаты</a></li>
+                        <li className="footer__list-item"><NavLink to="/error" className="footer__list-link">Часто задаваемые вопросы</NavLink></li>
+                        <li className="footer__list-item"><NavLink to="/error" className="footer__list-link">Способы оплаты</NavLink></li>
                     </ul>
                     <ul className="footer__list">
                         <h6 className="footer__list-title">Гидам</h6>
                         <li className="footer__list-item">
                             <NavLink to="/guide" className="logo">Стать гидом</NavLink>
                         </li>
-                        <li className="footer__list-item"><a href="" className="footer__list-link">Правила работы</a></li>
+                        <li className="footer__list-item"><NavLink to="/error" className="footer__list-link">Правила работы</NavLink></li>
                     </ul>
                     <ul className="footer__list">
                         <h6 className="footer__list-title">Документы</h6>

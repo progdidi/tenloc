@@ -1,8 +1,11 @@
+
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
-import LoginModal from '../modal/loginModal/LoginModal';
+
+//components
 import Modal from '../modal/Modal';
+import UserAccount from './userAccount/UserAccount';
 
 
 //images
@@ -10,6 +13,7 @@ import fav from './images/fav.svg';
 import logo from './images/logo.png';
 import arr from './images/arr.svg';
 
+//styles
 import './header.scss';
 
 const Header = () => {
@@ -19,8 +23,8 @@ const Header = () => {
 
     //модальное окно
     const [showModal, setShowModal] = useState(false);
-
-
+    const [showUser, setShowUser] = useState(false);
+    
 
     return ( 
         <header className="header">
@@ -32,24 +36,24 @@ const Header = () => {
                         <ul className={isMobileMenuOpen ? "menu__list" : "menu__list active"}>
                             <li className="menu__list-item direction" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
                                 <button className="menu__list-link">Направления <img src={arr} alt="" className="arr_img" /></button>
-                                <ul className={isNavExpanded ? "submenu" : "submenu active"}>
+                                <ul className={isNavExpanded ? "submenu active" : "submenu"}>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Дубай</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Дубай</NavLink>
                                     </li>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Стамбул</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Стамбул</NavLink>
                                     </li>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Санкт-Петербург</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Санкт-Петербург</NavLink>
                                     </li>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Карелия</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Карелия</NavLink>
                                     </li>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Калининград</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Калининград</NavLink>
                                     </li>
                                     <li className="submenu__item">
-                                        <NavLink to="/excursion" className="menu__list-link">Мурманск</NavLink>
+                                        <NavLink to="/city" className="menu__list-link">Мурманск</NavLink>
                                     </li>
                                 </ul>
                             </li>
@@ -61,7 +65,7 @@ const Header = () => {
                                 
                             </li>
                             <li className="menu__list-item">
-                                <a href="" className="menu__list-link">Помощь клиентам<img src={arr} alt="" className="arr_img" /></a>
+                                <NavLink to="/error" className="menu__list-link">Помощь клиентам<img src={arr} alt="" className="arr_img" /></NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -78,6 +82,7 @@ const Header = () => {
                         </button>
                         <button className="header-btn login" onClick={() => setShowModal(true)}>Войти</button>
                         <Modal showModal={showModal} id="login" setShowModal={setShowModal} activeModal="login"/>
+                        <UserAccount showUser={showUser}/>
                     </div>
                 </div>
             </div>
