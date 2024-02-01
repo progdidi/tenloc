@@ -67,6 +67,9 @@
             position: absolute;
             right: 23px;
             bottom: 23px;
+            &.selected {
+                background-color: var(--yellow-color);
+            }
         }
     }
 }

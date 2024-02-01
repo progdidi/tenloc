@@ -3,13 +3,13 @@ import basket from './basket.svg';
 import { useState } from 'react';
 import Modal from '../modal/Modal';
 
-const Basket = () => {
+const Basket = ({showBasket}) => {
 
     const [showModal, setShowModal] = useState(false);
 
     return ( 
         <>
-            <div className="basket">
+            <div className={showBasket ? "basket active" : "basket"}>
                 <button className="basket__btn" onClick={() => setShowModal(true)}>
                     <img src={basket} alt="" className="basket__btn-img" />
                 </button>

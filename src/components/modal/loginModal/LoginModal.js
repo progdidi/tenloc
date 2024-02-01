@@ -1,11 +1,12 @@
 import './loginModal.scss';
 import Modal from '../Modal';
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 const LoginModal = () => {
 
     const [showRegistration, setShowRegistration] = useState(false);
+
+
 
     return ( 
         <>
