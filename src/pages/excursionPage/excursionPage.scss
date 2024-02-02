@@ -1,4 +1,36 @@
 .excursion {
+    padding-top: 21px;
+    .page-navigation {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 43px;
+        line-height: 200%;
+        &__link {
+            padding: 0 13px 0 11px;
+            position: relative;
+            display: block;
+            &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #000;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+        &__page {
+            padding: 0 11px;
+            color: #a1a1a1;
+
+        }
+    }
     &__top {
         display: flex;
         justify-content: space-between;
@@ -38,6 +70,7 @@
     &__info {
         display: flex;
         gap: 42px;
+        align-items: flex-start;
     }
     
     &__descr {

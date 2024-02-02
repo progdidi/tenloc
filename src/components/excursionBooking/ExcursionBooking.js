@@ -1,8 +1,11 @@
 import './excursionBooking.scss';
 
+//components
+import DateInput from '../dateInput/DateInput';
 import DetailItem from './detailsItem/DetailItem';
-import Calendar from '../calendar/Calendar';
-import { useState } from 'react';
+import SelectInput from '../selectInput/SelectInput';
+
+//hooks
 
 const details = [
     {
@@ -44,7 +47,22 @@ const details = [
 
 const ExcursionBooking = () => {
 
-    const [isCalendarOpen, setCalendarOpen] = useState();
+    const groupOptions = [
+        {
+            value: 'Группа до 6 человек',
+            label: 'Группа до 6 человек'
+        },
+
+        {
+            value: 'Группа до 4 человек',
+            label: 'Группа до 4 человек'
+        },
+
+        {
+            value: 'Группа до 10 человек',
+            label: 'Группа до 10 человек'
+        }
+    ];
 
     return ( 
         <div className="booking">
@@ -52,13 +70,10 @@ const ExcursionBooking = () => {
                 <h4 className="booking__title">Забронировать экскурсию</h4>
 
                 <div className="booking__inputs">
-                    <input type="text" className="booking__input active" />
-                    <input type="text" className="booking__input date" onClick={() => setCalendarOpen(true)}/>
-                    <input type="text" className="booking__input"/>
+                    <input type="text" className="booking__input" placeholder='завтра' />
+                    <DateInput/>
+                    <SelectInput options={groupOptions}/>
                 </div>
-
-                <Calendar showCalendar={isCalendarOpen}></Calendar>
-
 
                 <div className="booking__details">
                     {details.map((detail) => {

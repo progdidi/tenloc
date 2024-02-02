@@ -47,6 +47,15 @@
                 border: none;
             }
         }
+        .date-input__form {
+            width: 81px;
+            &::after {
+                content: none;
+            }
+            .date__input {
+                width: 81px;
+            }
+        }
     }
 
     

@@ -20,14 +20,20 @@ import gal6 from './images/gal6.png';
 import ExcursionBooking from '../../components/excursionBooking/ExcursionBooking';
 import ExcursionSection from '../../components/excursionSection/ExcursionSection';
 import Basket from '../../components/basket/Basket';
+import { NavLink } from 'react-router-dom';
 
 
-const ExcursionPage = () => {
+const ExcursionPage = ({title, price}) => {
 
     return ( 
         <>
             <section className="excursion">
                 <div className="container">
+                    <div className="page-navigation">
+                        <NavLink to="" className="page-navigation__link">Россия</NavLink>
+                        <NavLink to="/city" className="page-navigation__link"> Санкт-Петербург</NavLink>
+                        <p className="page-navigation__page">Коллекция Эрмитажа и парадная жизнь Зимнего дворца (со входными билетами)</p>
+                    </div>
                     <div className="excursion__top">
                         <h3 className="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца (со входными билетами)</h3>
                         <p className="excursion__price">от 2750 ₽ <br /> <span>за человека</span> </p>
