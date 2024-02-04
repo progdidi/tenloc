@@ -1,4 +1,5 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+// import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {HashRouter as Router, Routes, Route} from "react-router-dom"; //чтобы работало на gh-pages
 import { useLocation } from "react-router-dom";
 
 import Footer from "./components/footer/Footer";
@@ -15,9 +16,10 @@ import ThanksPage from "./pages/thanksPage/ThanksPage";
 import ErrorPage from "./pages/errorPage/404";
 
 function App() {
+  //basename={process.env.PUBLIC_URL}
   
   return (
-    <Router>
+    <Router >
       <div className="App">
         <Header></Header>
 
