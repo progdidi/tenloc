@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tenloc/static/css/main.229074b0.css",
-    "main.js": "/tenloc/static/js/main.bf723cd2.js",
+    "main.js": "/tenloc/static/js/main.2dd57153.js",
     "static/media/promo.png": "/tenloc/static/media/promo.62c4f4b61f038e9c9c97.png",
     "static/media/main.png": "/tenloc/static/media/main.583e3290e293e97268b7.png",
     "static/media/example.png": "/tenloc/static/media/example.faadcbc389549bfc3a7e.png",
@@ -78,10 +78,10 @@
     "static/media/end.svg": "/tenloc/static/media/end.11a727570938f62664e084806d3164dc.svg",
     "static/media/start.svg": "/tenloc/static/media/start.2c8284fd809168bc916f530ae1259604.svg",
     "main.229074b0.css.map": "/tenloc/static/css/main.229074b0.css.map",
-    "main.bf723cd2.js.map": "/tenloc/static/js/main.bf723cd2.js.map"
+    "main.2dd57153.js.map": "/tenloc/static/js/main.2dd57153.js.map"
   },
   "entrypoints": [
     "static/css/main.229074b0.css",
-    "static/js/main.bf723cd2.js"
+    "static/js/main.2dd57153.js"
   ]
 }
