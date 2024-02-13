@@ -4,9 +4,13 @@ import ReviewsItem from '../reviewsItem/ReviewsItem';
 import { reviews } from '../../helpers/reviews/reviews';
 
 import SliderDots from '../sectionSlider/sliderDots/SliderDots';
+import Slider from '../sectionSlider/Slider';
+
+
 
 const ReviewSection = () => {
     return ( 
+        <>
         <section className="reviews">
             <div className="container">
                 <div className="reviews__inner">
@@ -33,6 +37,13 @@ const ReviewSection = () => {
                 
             </div>
         </section>
+
+        <section className="try">
+            <div className="container">
+                <Slider data={reviews} children={<ReviewsItem/>}/>
+            </div>
+        </section>
+        </>
      );
 }
  
