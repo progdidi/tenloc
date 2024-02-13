@@ -6,6 +6,8 @@ import { useState } from 'react';
 //components
 import Modal from '../modal/Modal';
 import UserAccount from './userAccount/UserAccount';
+import MobileMenu from './mobileMenu/MobileMenu';
+import DirectionMenu from './directionMenu/DirectionMenu';
 
 
 //images
@@ -18,12 +20,13 @@ import './header.scss';
 
 const Header = () => {
 
-    const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    
+    const [showMobile, setShowMobile] = useState(false);
 
     //модальное окно
     const [showModal, setShowModal] = useState(false);
     const [showUser, setShowUser] = useState(false);
+
     
 
     return ( 
@@ -33,30 +36,10 @@ const Header = () => {
                     <NavLink to="/" className="logo"><img src={logo} alt="" className="logo__img" /></NavLink>
 
                     <nav className="menu">
-                        <ul className={isMobileMenuOpen ? "menu__list" : "menu__list active"}>
-                            <li className="menu__list-item direction" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
-                                <button className="menu__list-link">Направления <img src={arr} alt="" className="arr_img" /></button>
-                                <ul className={isNavExpanded ? "submenu active" : "submenu"}>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Дубай</NavLink>
-                                    </li>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Стамбул</NavLink>
-                                    </li>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Санкт-Петербург</NavLink>
-                                    </li>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Карелия</NavLink>
-                                    </li>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Калининград</NavLink>
-                                    </li>
-                                    <li className="submenu__item">
-                                        <NavLink to="/city" className="menu__list-link">Мурманск</NavLink>
-                                    </li>
-                                </ul>
-                            </li>
+                        <ul className="menu__list">
+
+                               <DirectionMenu/>
+                            
                             <li className="menu__list-item">
                                 <NavLink to="/about" className="menu__list-link">О сервисе</NavLink>
                             </li>
@@ -70,11 +53,14 @@ const Header = () => {
                         </ul>
                     </nav>
 
-                    <button className="menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                    <button className="menu-btn" onClick={() => setShowMobile(!showMobile)}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
+
+
+                    <MobileMenu showMobile={showMobile}/>
 
                     <div className="header__buttons">
                         <button className="header-btn fav">

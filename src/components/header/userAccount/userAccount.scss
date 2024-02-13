@@ -4,7 +4,7 @@
     &.logged {
 
     }
-    .user-info {
+    &-info {
         display: flex;
         align-items: center;
         gap: 11px;
@@ -31,7 +31,7 @@
         }
     }
     
-    .user-menu {
+    &-menu {
         position: absolute;
         bottom: -185px;
         font-weight: 500;
@@ -54,4 +54,20 @@
         
     }
     
+}
+
+@media(max-width: 750px) {
+    .user {
+        width: auto;
+        &-info {
+            &__name {
+                display: none;
+            }
+
+            &__img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 }

@@ -8,7 +8,7 @@ const Promo = () => {
         <section className="promo">
             <div className="container">
                 <div className="promo__inner">
-                    <Contacts></Contacts>
+                    {/* <Contacts></Contacts> */}
 
                     <h1 className="promo__title">Поиск и бронирование экскурсий</h1>
                     <p className="promo__text">Экскурсии и частные гиды в России и за рубежом</p>
