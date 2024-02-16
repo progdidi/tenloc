@@ -1,12 +1,19 @@
 .login-btn {
     background-color: var(--light-grey-color);
     border-radius: 100px;
-    padding: 12px 32px;
+    padding: 12px 18px;
+    text-align: center;
     &.logged {
         display: none;
     }
     &:hover {
         background-color: var(--yellow-color);
+    }
+
+    &__img {
+        width: 25px;
+        height: 25px;
+        display: none;
     }
     
 }

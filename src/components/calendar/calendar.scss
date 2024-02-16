@@ -1,5 +1,5 @@
 .calendar {
-    width: 860px;
+    width: auto;
     padding: 42px 35px;
     border-radius: 20px;
     background: #FFF;
@@ -108,4 +108,22 @@
             }
         }
    }
+}
+
+@media (max-width: 1000px) {
+    .calendar {
+        padding: 30px 20px;
+        &__month {
+            &:last-child {
+                display: none;
+            }
+            .calendar-table {
+                &__days {
+                    .calendar-table__day {
+                        
+                    }
+                }
+            }
+        }
+    }
 }

@@ -3,9 +3,9 @@ import './calendar.scss';
 import prev from './prev.svg';
 import next from './next.svg';
 
-const Calendar = ({showCalendar="false"}) => {
+const Calendar = ({showCalendar}) => {
     return ( 
-        <div className={showCalendar ? "calendar" : "calendar active"}>
+        <div className={showCalendar ? "calendar active" : "calendar"}>
             <div className="calendar__inner">
                 <div className="calendar__month">
                     <button className="calendar__month-btn prev">

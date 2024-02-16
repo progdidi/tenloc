@@ -24,6 +24,7 @@
             display: flex;
             align-items: center;
             gap: 11px;
+            width: 162px;
             &.whatsapp {
                 background-color: #4CAF50;;
             }
@@ -59,4 +60,15 @@
         
     }
     
+}
+
+@media (max-width: 450px) {
+    .contacts {
+        &__links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }

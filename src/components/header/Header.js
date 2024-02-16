@@ -54,7 +54,7 @@ const Header = () => {
                     </button>
 
 
-                    <MobileMenu showMobile={showMobile}/>
+                    <MobileMenu showMobile={showMobile} setShowModal={setShowMobile}/>
 
                     <div className="header__buttons">
                         <button className="header-btn fav">

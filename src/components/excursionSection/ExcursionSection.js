@@ -10,9 +10,12 @@ const ExcursionSection = () => {
     return ( 
         <section className="excursions">
             <div className="container">
-                <h3 className="excursions__title section__title">Экскурсии</h3>
-                <DirectionInput/>
-                <DateInput/>
+                <div className="excursions__top">
+                    <h3 className="excursions__title section__title">Экскурсии</h3>
+                    <DirectionInput/>
+                    <DateInput/>
+                </div>
+                
 
                 <div className="excursions__items">
                     {excursions.map((excursion) => {

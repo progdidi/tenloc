@@ -1,9 +1,10 @@
 .promo {
     margin-bottom: 95px;
+    background-image: url('./images/promo.png');
     &__inner {
         border-radius: 20px;
         position: relative;
-        background-image: url('./images/promo.png');
+        
         min-height: calc(100vh - 110px);
         padding-top: 123px;
         display: flex;
@@ -149,6 +150,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding: 10px;
+                margin-bottom: 70px;
                 &-field {
                     width: 100%;
                     margin-bottom: 11px;
@@ -164,6 +167,8 @@
                 &-btn {
                     width: 100%;
                     margin-left: 0;
+                    border-radius: 20px;
+                    padding: 14px 30px 15px 54px;
                 }
             }
         }
@@ -179,6 +184,10 @@
             }
             .promo__form {
                 max-width: 80%;
+            }
+
+            .promo__prompts {
+                max-width: 90%;
             }
         }
     }

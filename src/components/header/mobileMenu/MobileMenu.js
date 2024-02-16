@@ -11,16 +11,15 @@ import Login from '../login/Login';
 
 
 
-const MobileMenu = ({showMobile}) => {
+const MobileMenu = ({showMobile, setShowModal}) => {
    
     return ( 
         <div className={showMobile ? "mobile-menu active" : "mobile-menu"}>
+                
             <div className="mobile-menu__top">
                 <a href="" className="logo"><img src={logo} alt="" className="logo__img" /></a>
-
-
-                <button className="mobile-menu__btn" onClick={() => !showMobile}>X</button>
-            </div>
+                <button className="mobile-menu__btn" onClick={() => setShowModal(false)}>X</button>
+                </div>
 
             <div className="mobile-menu__buttons">
                 <DirectionMenu/>

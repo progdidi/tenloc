@@ -8,10 +8,6 @@ html{
   box-sizing: inherit;
 }
 
-input {
-  outline: none;
-}
-
 ul[class],
 ol[class] {
   padding: 0;
@@ -62,4 +58,8 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }
