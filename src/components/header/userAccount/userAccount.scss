@@ -1,8 +1,9 @@
 .user {
     position: relative;
     width: 210px;
+    display: none;
     &.logged {
-
+        display: block;
     }
     &-info {
         display: flex;

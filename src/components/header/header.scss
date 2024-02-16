@@ -56,14 +56,6 @@
                     padding: 14px;
                     border-radius: 50%;
                 }
-                
-                &.login {
-                    border-radius: 100px;
-                    padding: 12px 32px;
-                    &.logged {
-                        display: none;
-                    }
-                }
             }
         }
     
@@ -76,6 +68,10 @@
     .header__inner {
         position: relative;
         padding-right: 60px;
+
+        .menu {
+            display: none;
+        }
 
         .header__buttons {
             margin-left: none;

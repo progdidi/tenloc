@@ -1,0 +1,12 @@
+.login-btn {
+    background-color: var(--light-grey-color);
+    border-radius: 100px;
+    padding: 12px 32px;
+    &.logged {
+        display: none;
+    }
+    &:hover {
+        background-color: var(--yellow-color);
+    }
+    
+}

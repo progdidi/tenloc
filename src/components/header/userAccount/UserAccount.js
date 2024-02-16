@@ -7,7 +7,7 @@ const UserAccount = ({showUser, img, name, id}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return ( 
-        <div className={showUser ? "user" : "user logged"}>
+        <div className={showUser ? "user logged" : "user"}>
             <div className="user-info" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <div className="user-info__img"></div>
                 <p className="user-info__name">Иванов</p>

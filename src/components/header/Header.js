@@ -8,26 +8,20 @@ import Modal from '../modal/Modal';
 import UserAccount from './userAccount/UserAccount';
 import MobileMenu from './mobileMenu/MobileMenu';
 import DirectionMenu from './directionMenu/DirectionMenu';
+import Login from './login/Login';
 
 
 //images
 import fav from './images/fav.svg';
 import logo from './images/logo.png';
-import arr from './images/arr.svg';
 
 //styles
 import './header.scss';
 
-const Header = () => {
 
+const Header = () => {
     
     const [showMobile, setShowMobile] = useState(false);
-
-    //модальное окно
-    const [showModal, setShowModal] = useState(false);
-    const [showUser, setShowUser] = useState(false);
-
-    
 
     return ( 
         <header className="header">
@@ -66,9 +60,9 @@ const Header = () => {
                         <button className="header-btn fav">
                             <img src={fav} alt="" className="header-btn__img" />
                         </button>
-                        <button className="header-btn login" onClick={() => setShowModal(true)}>Войти</button>
-                        <Modal showModal={showModal} id="login" setShowModal={setShowModal} activeModal="login"/>
-                        <UserAccount showUser={showUser}/>
+
+                        <Login/>
+                       
                     </div>
                 </div>
             </div>
