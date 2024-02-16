@@ -8,6 +8,10 @@ html{
   box-sizing: inherit;
 }
 
+input {
+  outline: none;
+}
+
 ul[class],
 ol[class] {
   padding: 0;

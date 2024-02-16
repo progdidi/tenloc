@@ -1,0 +1,10 @@
+.slider {
+    max-width: 400%;
+
+    &__items {
+        display: flex;
+        gap: 30px;
+    }
+    
+    overflow: hidden;
+}

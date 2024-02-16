@@ -1,0 +1,19 @@
+.search-form {
+    
+    position: relative;
+    border-radius: 100px;
+    background-color: #f5f5f5;
+    padding: 13px 28px;
+    &__input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+    &__btn {
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

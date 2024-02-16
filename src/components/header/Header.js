@@ -38,7 +38,7 @@ const Header = () => {
                     <nav className="menu">
                         <ul className="menu__list">
 
-                               <DirectionMenu/>
+                            <DirectionMenu/>
                             
                             <li className="menu__list-item">
                                 <NavLink to="/about" className="menu__list-link">О сервисе</NavLink>
@@ -48,7 +48,7 @@ const Header = () => {
                                 
                             </li>
                             <li className="menu__list-item">
-                                <NavLink to="/error" className="menu__list-link">Помощь клиентам<img src={arr} alt="" className="arr_img" /></NavLink>
+                                <NavLink to="/error" className="menu__list-link list">Помощь клиентам</NavLink>
                             </li>
                         </ul>
                     </nav>

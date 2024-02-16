@@ -6,6 +6,8 @@ import { reviews } from '../../helpers/reviews/reviews';
 import SliderDots from '../sectionSlider/sliderDots/SliderDots';
 import Slider from '../sectionSlider/Slider';
 
+import ex1 from '../../images/payment.png';
+
 
 
 const ReviewSection = () => {
@@ -35,12 +37,6 @@ const ReviewSection = () => {
 
                 <SliderDots/>
                 
-            </div>
-        </section>
-
-        <section className="try">
-            <div className="container">
-                <Slider data={reviews} children={<ReviewsItem/>}/>
             </div>
         </section>
         </>

@@ -1,8 +1,11 @@
 import './mobileMenu.scss';
 
+import logo from '../images/logo.png';
+
 //components
 import Contacts from '../../contacts/Contacts';
 import DirectionMenu from '../directionMenu/DirectionMenu';
+import SearchForm from '../../searchForm/SearchForm';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -12,11 +15,22 @@ const MobileMenu = ({showMobile}) => {
    
     return ( 
         <div className={showMobile ? "mobile-menu active" : "mobile-menu"}>
-            <button className="mobile-menu__btn" onClick={() => !showMobile}>X</button>
-            <DirectionMenu/>
+            <div className="mobile-menu__top">
+                <a href="" className="logo"><img src={logo} alt="" className="logo__img" /></a>
+
+
+                <button className="mobile-menu__btn" onClick={() => !showMobile}>X</button>
+            </div>
+
+            <div className="mobile-menu__buttons">
+                <DirectionMenu/>
+                <button className="login">login</button>
+                <SearchForm/>
+            </div>
+
 
             <nav className="menu">
-                <ul className="menu__list active">
+                <ul className="menu__list">
                     <li className="menu__list-item">
                         <NavLink to="/about" className="menu__list-link">О сервисе</NavLink>
                     </li>
