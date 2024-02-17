@@ -1,0 +1,13 @@
+.slider__btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #D2D2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

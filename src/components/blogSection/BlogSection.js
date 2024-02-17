@@ -3,7 +3,7 @@ import './blogSection.scss';
 import BlogItem from '../blogItem/BlogItem';
 import {blogs} from '../../helpers/blogs/blogs';
 
-import SliderButtons from '../sectionSlider/sliderButtons/SliderButtons';
+import Slider from '../sectionSlider/Slider';
 
 const BlogSection = () => {
     return ( 
@@ -11,7 +11,7 @@ const BlogSection = () => {
             <div className="container">
                 <div className="blog__top">
                     <h3 className="section__title blog__title">Блог</h3>
-                    <SliderButtons/>
+               
                 </div>
                
                 
@@ -19,7 +19,7 @@ const BlogSection = () => {
                     
                 </div>
                 <div className="blog__items">
-                    {blogs.map((blog) => {
+                    {blogs.slice(0, 4).map((blog) => {
                         return (
                             <BlogItem
                                 title={blog.title}
@@ -30,6 +30,18 @@ const BlogSection = () => {
                         )
                     })}
                 </div>
+
+                <Slider dataSlider={blogs}>
+                     {/* <BlogItem /> */}
+                            <BlogItem
+                                title={child.title}
+                                img={child.img}
+                                date={child.date}
+                                key={child.id}
+                            />
+                </Slider>
+
+
             </div>
         </section>
      );
