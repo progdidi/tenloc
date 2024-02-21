@@ -2,7 +2,7 @@ import Counter from "../../counter/Counter";
 
 import './orderModalItem.scss';
 
-const OrderModalItem = ({img, name, price, amount, date}) => {
+const OrderModalItem = ({img, name, price, amount, date, time, weakDay, currency}) => {
     return ( 
         <tr className="order-modal__item">
             <td className="order-modal__item-data img">
@@ -11,10 +11,10 @@ const OrderModalItem = ({img, name, price, amount, date}) => {
             <td className="order-modal__item-data name">{name}</td>
             <td className="order-modal__item-data date">
                 <h6 className="order-modal__item-title">Дата и время</h6>
-                {date}
+                {date} в {time} | {weakDay}
             </td>
             <td className="order-modal__item-data price">
-                {price}
+                {price} {currency}
             </td>
             <td className="order-modal__item-data amount">
                 <Counter/>

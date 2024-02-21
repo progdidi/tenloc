@@ -14,6 +14,7 @@ import MainPage from "./pages/mainPage/MainPage";
 import ProfilePage from "./pages/profilePage/ProfilePage";
 import ThanksPage from "./pages/thanksPage/ThanksPage";
 import ErrorPage from "./pages/errorPage/404";
+import FavPage from "./pages/favPage/FavPage";
 
 function App() {
   //basename={process.env.PUBLIC_URL}
@@ -35,6 +36,7 @@ function App() {
             <Route path="/article" element={<BlogArticlePage/>} />
             <Route path="/guide" element={<GuidePage/>} />
             <Route path="/error" element={<ErrorPage/>} />
+            <Route path="/fav" element={<FavPage/>} />
           </Routes>
         </main>
         

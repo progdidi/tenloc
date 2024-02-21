@@ -2,7 +2,7 @@ import './registrationModal.scss';
 
 const RegistrationModal = () => {
     return ( 
-        <div className="modal__content registration-modal">
+        <div className="registration-modal">
             <h4 className="modal__title">Регистрация</h4>
 
             <div className="modal__form">

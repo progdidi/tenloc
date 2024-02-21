@@ -13,7 +13,7 @@
             font-weight: 400;
             line-height: 26px;
             padding-left: 22px;
-            padding-right: 40px;
+            width: 30%;
             
         }
 
@@ -21,7 +21,6 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 26px;
-            width: 217px;
             padding: 0 30px;
         }
 
@@ -40,9 +39,6 @@
         line-height: 26px; 
     }
 
-    &:last-child {
-        border-bottom: 1px solid #EDEDED;
-    }
 }
 
 @media (max-width: 700px) {
@@ -51,5 +47,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        border-top: 1px solid #EDEDED;
+        padding: 10px 0;
+        &-data {
+            width: 100%;
+            border-top: 1px solid transparent;
+            padding: 10px 0;
+            &.name {
+                width: 100%;
+            }
+            .order-modal__item-img{
+                margin: 0 auto;
+            }
+            &.amount {
+                .counter {
+                    justify-content: center;
+                }
+            }
+        }
     }
 }

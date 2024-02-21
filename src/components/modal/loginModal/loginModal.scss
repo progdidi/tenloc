@@ -1,9 +1,28 @@
 .login-modal {
-    max-width: 480px;
-}
+    .modal__form-password {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+        
+        .input__form-label {
+            display: flex;
+            align-items: center;
+        }
 
-@media (max-width: 700px) {
-    .login-modal {
-        max-width: 80%;
+        .password-btn {
+            color: #252525;
+        }
+    }
+
+    .modal__form-btn {
+        margin-bottom: 32px;
+    }
+
+    .modal__form-text {
+        font-size: 13px;
+        text-align: center;
+        color: #252525;
+        margin-bottom: 21px;
     }
 }

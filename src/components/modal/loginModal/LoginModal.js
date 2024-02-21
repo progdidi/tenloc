@@ -10,7 +10,7 @@ const LoginModal = () => {
 
     return ( 
         <>
-            <div className="modal__content login-modal">
+            <div className="login-modal">
                 <h4 className="modal__title">Вход</h4>
 
                 <div className="modal__form">
@@ -18,7 +18,7 @@ const LoginModal = () => {
                     <input type="text" className="modal__form-input" placeholder="Пароль"/>
                     <div className="modal__form-password">
                         <label htmlFor="" className="input__form-label">
-                            <input type="checkbox" className="modal__form-input" /> Запомнить пароль
+                            <input type="checkbox" className="modal__form-checkbox" /> Запомнить пароль
                         </label>
                         <button className="password-btn">Забыли пароль?</button>
                     </div>                        

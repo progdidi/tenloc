@@ -1,13 +1,15 @@
 .reviews {
-    padding: 70px 100px 75px 100px;
-    border-radius: 20px;
-    background-color: #FFF;
-    box-shadow: 0px 27px 31px 0px rgba(0, 0, 0, 0.02);
-    margin-bottom: 114px;
+    background: linear-gradient(180deg, #fff 0%, rgba(217, 217, 217, 0) 100%);;
+    padding-bottom: 119px;
+    border-radius: 50px;
     &__inner {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        background-color: #fff;
+        padding: 70px 100px 75px 100px;
+        border-radius: 20px;
+        box-shadow: 0px 27px 31px 0px rgba(0, 0, 0, 0.02);
         .reviews__info {
             .reviews__title {
                 margin-bottom: 21px;

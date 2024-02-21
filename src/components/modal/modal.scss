@@ -23,7 +23,8 @@
         border-radius: 20px;
         transform: scale(0.5);
         transition: all 0.3s;
-        max-height: 80vh;
+        max-height: 90vh;
+        overflow: scroll;
         &.active {
             transform: scale(1);
         }
@@ -78,20 +79,19 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .modal {
-        &__title {
-            font-size: 23px;
-            line-height: 30px;
-        }
-        &__content {
+        &__window {
             padding: 20px 25px;
-        }
-
-        .modal__form {
-            &-input {
-                padding: 10px 15px;
-            }
         }
     }
 }
+
+@media (max-width: 500px) {
+    .modal {
+        &__window {
+            padding: 12px;
+        }
+    }
+}
+

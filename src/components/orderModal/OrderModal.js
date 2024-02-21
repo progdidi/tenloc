@@ -9,9 +9,9 @@ import yoomoney from './images/yoomoney.png';
 //styles
 import './orderModal.scss';
 
-const OrderModal = ({id="order"}) => {
+const OrderModal = () => {
     return ( 
-        <div className="modal__content order-modal">
+        <div className="order-modal">
             <h5 className="order-modal__title">Оформление заказа</h5>
 
             <table className="order-modal__info">
@@ -24,6 +24,9 @@ const OrderModal = ({id="order"}) => {
                         date={order.date}
                         img={order.img}
                         price={order.price}
+                        currency={order.currency}
+                        time={order.time}
+                        weakDay={order.weakDay}
                     />
                 )
             })}

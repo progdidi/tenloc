@@ -11,7 +11,9 @@ const orders = [
         date: '12.08.2024',
         amount: 2,
         price: 1000,
-        currency: '₽'
+        currency: '₽',
+        time: '13:00',
+        weakDay: 'вторник'
     },
 
     {
@@ -22,7 +24,9 @@ const orders = [
         date: '12.08.2024',
         amount: 2,
         price: 250,
-        currency: '$'
+        currency: '$',
+        time: '13:00',
+        weakDay: 'вторник'
     },
 
     {
@@ -33,7 +37,9 @@ const orders = [
         date: '12.08.2024',
         amount: 2,
         price: 1000,
-        currency: '₽'
+        currency: '₽',
+        time: '13:00',
+        weakDay: 'вторник'
     }
 ]
 

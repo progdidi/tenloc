@@ -57,9 +57,10 @@ const Header = () => {
                     <MobileMenu showMobile={showMobile} setShowModal={setShowMobile}/>
 
                     <div className="header__buttons">
-                        <button className="header-btn fav">
-                            <img src={fav} alt="" className="header-btn__img" />
-                        </button>
+                    
+                            <NavLink to="/fav" className="header-btn fav">
+                                 <img src={fav} alt="" className="header-btn__img" />
+                            </NavLink>
 
                         <Login/>
                        

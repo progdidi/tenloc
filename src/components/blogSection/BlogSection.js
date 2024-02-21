@@ -30,16 +30,16 @@ const BlogSection = () => {
                         )
                     })}
                 </div>
-
+{/* 
                 <Slider dataSlider={blogs}>
                      {/* <BlogItem /> */}
-                            <BlogItem
+                            {/* <BlogItem
                                 title={child.title}
                                 img={child.img}
                                 date={child.date}
                                 key={child.id}
                             />
-                </Slider>
+                </Slider> * */}
 
 
             </div>

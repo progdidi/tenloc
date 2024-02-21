@@ -1,9 +1,8 @@
 .order-modal {
-    max-width: 1000px;
     margin: 0 auto;
     border-radius: 20px;
     background-color: #FFF;
-    padding: 43px 86px;
+    max-width: 904px;
     &__title {
         font-size: 30px;
         font-style: normal;
@@ -14,6 +13,7 @@
     }
     &__info {
         margin-bottom: 35px;
+        border-bottom: 1px solid #EDEDED;
     }
 
     &__payment {
@@ -36,7 +36,7 @@
             display: flex;
             justify-content: space-between;
             .payment__item-btn {
-                width: 290px;
+                width: 31%;
                 padding: 43px 28px;
                 border-radius: 10px;
                 border: 1px solid #DADADA;
@@ -74,7 +74,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 45px;
-        .order-modal__form-main {
+        &-main {
             .order-modal__form-label {
                 font-size: 14px;
                 font-style: normal;
@@ -100,7 +100,7 @@
                 }
             }
             .order-modal__form-btn {
-                padding: 15px 50px;
+                padding: 15px 10px;
                 color: #000;
                 font-size: 15px;
                 font-weight: 500;
@@ -119,7 +119,7 @@
             }
         }
     
-        .order-modal__form-summ {
+        &-summ {
             padding: 33px;
             border-radius: 20px;
             background-color: #F6F6F6;
@@ -146,21 +146,55 @@
     
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     .order-modal {
-        max-width: 90%;
-        padding: 20px 30px;
-        .order-modal__item-data{
-            &.name {
-            padding: 10px 15px;
+        max-width: 600px;
+        &__payment {
+            .payment__items {
+                .payment__item-btn {
+                    padding: 18px 15px;
+                }
             }
+        }
+        &__form {
+            padding: 20px 25px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            &-main {
+                width: 100%;
+            }
+            &-summ {
+                width: 100%;
+                margin-bottom: 30px;
+                .order-total {
 
-            &.date {
-                padding: 0 15px;
+                }
             }
         }
     }
 }
 
+@media (max-width: 800px) {
+    .order-modal {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-modal {
+        &__form {
+            padding: 12px 15px;
+        }
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 400px) {
+    .order-modal {
+        max-width: 280px;
+    }
+}
 
 

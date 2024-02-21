@@ -1,6 +1,9 @@
 .promo {
     margin-bottom: 95px;
     background-image: url('./images/promo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     &__inner {
         border-radius: 20px;
         position: relative;
