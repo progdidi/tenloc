@@ -179,6 +179,9 @@
 @media (max-width: 800px) {
     .order-modal {
         max-width: 450px;
+        &__title {
+            padding-top: 30px;
+        }
     }
 }
 

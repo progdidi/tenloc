@@ -1,0 +1,85 @@
+.excursion-filter {
+    padding-bottom: 34px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 63px;
+    &__btn {
+        display: none;
+        background-color: #f5f5f5;
+        padding: 10px 15px;
+        border-radius: 100px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    &__item {
+        display: flex;
+        gap: 10px;
+        &-label {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 162%;
+            color: var(--dark-grey-color);
+        }
+
+
+        &-input {
+            display: block;
+            background-color: #f5f5f5;
+            padding: 10px 19px;
+            border-radius: 1000px;
+            font-size: 16px;
+            line-height: 162%;
+            text-align: center;
+            border: none;
+        }
+    }
+    .date-input__form {
+        width: 81px;
+        &::after {
+            content: none;
+        }
+        .date__input {
+            width: 81px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .excursion-filter {
+        position: relative;
+        &__btn {
+            display: block;
+        }
+
+        &__menu {
+            border-radius: 15px;
+            box-shadow: 0px 7px 100px 0px rgba(0, 0, 0, 0.15);
+            padding: 26px 27px 26px 29px !important;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            transform: translateX(-200%);
+            transition: all 0.3s;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            z-index: 10;
+            &.active {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .excursion-filter {
+        &__menu {
+            max-width: 320px;
+        }
+    }
+}
