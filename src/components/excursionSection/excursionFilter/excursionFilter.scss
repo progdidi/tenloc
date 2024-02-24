@@ -15,6 +15,7 @@
     }    
     &__item {
         display: flex;
+        align-items: center;
         gap: 10px;
         &-label {
             display: block;
@@ -28,7 +29,7 @@
         &-input {
             display: block;
             background-color: #f5f5f5;
-            padding: 10px 19px;
+            padding: 10px 13px;
             border-radius: 1000px;
             font-size: 16px;
             line-height: 162%;
@@ -43,11 +44,19 @@
         }
         .date__input {
             width: 81px;
+            margin-bottom: 0;
+            background-color: #f5f5f5;
+            padding: 10px 13px;
+            border-radius: 1000px;
+            font-size: 16px;
+            line-height: 162%;
+            text-align: center;
+            border: none;
         }
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1210px) {
     .excursion-filter {
         position: relative;
         &__btn {
@@ -57,7 +66,7 @@
         &__menu {
             border-radius: 15px;
             box-shadow: 0px 7px 100px 0px rgba(0, 0, 0, 0.15);
-            padding: 26px 27px 26px 29px !important;
+            padding: 26px 27px 26px 29px;
             background-color: #fff;
             flex-direction: column;
             justify-content: center;
@@ -73,13 +82,38 @@
                 transform: translateX(0);
             }
         }
+
+        &__item {
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--dark-grey-color);
+            flex-direction: column;
+            justify-content: center;
+            &:last-child {
+                border-bottom: none;
+            }
+            &:first-child {
+                display: block;
+                text-align: center;
+                label {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        
     }
 }
 
 @media (max-width: 450px) {
     .excursion-filter {
         &__menu {
-            max-width: 320px;
+            padding: 26px 19px;
+        }
+        &__item {
+            &-input {
+                
+            }
         }
     }
 }

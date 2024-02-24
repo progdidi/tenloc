@@ -53,25 +53,22 @@ const ExcursionFilter = () => {
 
             <div className={isFilterShow ? "excursion-filter__menu active" : "excursion-filter__menu"}>
                 <div className="excursion-filter__item">
-                    <label htmlFor="" className="excursion-filter__item-label">Дата
-                        <DateInput/>
-                        <DateInput/>
-                    </label>
+                    <label htmlFor="" className="excursion-filter__item-label">Дата</label>
+                    <DateInput placeholder="17.08"/> - 
+                    <DateInput placeholder="19.08"/>
                 </div>
                 <div className="excursion-filter__item">
-                    <label htmlFor="" className="excursion-filter__item-label">Цена
-                        <SelectInput options={priceOptions}/>
-                    </label>
+                    <label htmlFor="" className="excursion-filter__item-label">Цена</label>
+                    <SelectInput options={priceOptions}/>
                 </div>
                 <div className="excursion-filter__item">
                     <label htmlFor="" className="excursion-filter__item-label">Тип оплаты
-                        <SelectInput options={paymentOptions}/>
                     </label>
+                    <SelectInput options={paymentOptions}/>
                 </div>
                 <div className="excursion-filter__item">
-                    <label htmlFor="" className="excursion-filter__item-label">Тип экскурсии
+                    <label htmlFor="" className="excursion-filter__item-label">Тип экскурсии</label>
                     <SelectInput options={typeOptions}/>
-                    </label>
                 </div>
             </div>
 
