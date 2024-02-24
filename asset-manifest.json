@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tenloc/static/css/main.331d0c43.css",
-    "main.js": "/tenloc/static/js/main.e62af34a.js",
+    "main.css": "/tenloc/static/css/main.bbf3d89e.css",
+    "main.js": "/tenloc/static/js/main.10aaaa01.js",
     "static/media/promo.png": "/tenloc/static/media/promo.62c4f4b61f038e9c9c97.png",
     "static/media/main.png": "/tenloc/static/media/main.583e3290e293e97268b7.png",
     "static/media/example.png": "/tenloc/static/media/example.faadcbc389549bfc3a7e.png",
@@ -79,11 +79,11 @@
     "static/media/arr.svg": "/tenloc/static/media/arr.dddabac188e90064756c415d2a593dd5.svg",
     "static/media/end.svg": "/tenloc/static/media/end.11a727570938f62664e084806d3164dc.svg",
     "static/media/start.svg": "/tenloc/static/media/start.2c8284fd809168bc916f530ae1259604.svg",
-    "main.331d0c43.css.map": "/tenloc/static/css/main.331d0c43.css.map",
-    "main.e62af34a.js.map": "/tenloc/static/js/main.e62af34a.js.map"
+    "main.bbf3d89e.css.map": "/tenloc/static/css/main.bbf3d89e.css.map",
+    "main.10aaaa01.js.map": "/tenloc/static/js/main.10aaaa01.js.map"
   },
   "entrypoints": [
-    "static/css/main.331d0c43.css",
-    "static/js/main.e62af34a.js"
+    "static/css/main.bbf3d89e.css",
+    "static/js/main.10aaaa01.js"
   ]
 }
