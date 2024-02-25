@@ -16,6 +16,14 @@
     }
 }
 
+.blog-slider {
+    max-width: 500px;
+    overflow: hidden;
+    .blog-item {
+        width: 300px;
+    }
+}
+
 @media (max-width: 1200px) {
     .blog__items {
         gap: 20px;

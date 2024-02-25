@@ -16,31 +16,20 @@ const BlogSection = () => {
                
                 
                 <div className="blog-slider">
-                    
+                    <div className="blog__items">
+                        {blogs.slice(0, 4).map((blog) => {
+                            return (
+                                <BlogItem
+                                    title={blog.title}
+                                    img={blog.img}
+                                    date={blog.date}
+                                    key={blog.id}
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
-                <div className="blog__items">
-                    {blogs.slice(0, 4).map((blog) => {
-                        return (
-                            <BlogItem
-                                title={blog.title}
-                                img={blog.img}
-                                date={blog.date}
-                                key={blog.id}
-                            />
-                        )
-                    })}
-                </div>
-{/* 
-                <Slider dataSlider={blogs}>
-                     {/* <BlogItem /> */}
-                            {/* <BlogItem
-                                title={child.title}
-                                img={child.img}
-                                date={child.date}
-                                key={child.id}
-                            />
-                </Slider> * */}
-
+                
 
             </div>
         </section>
